@@ -1,0 +1,154 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using ModelLayer.Model;
+using NLog.Web;
+
+namespace HelloGreetingApplication.Controllers
+{
+    /// <summary>
+    /// Class providing API for HelloGreeting
+    /// </summary>
+    [ApiController]
+    [Route("[controller]")]
+    public class HelloGreetingController : ControllerBase
+    {
+        private readonly ILogger<HelloGreetingController> _logger;
+        private readonly DictionaryForMethod _countryDictionary;
+
+        public HelloGreetingController(ILogger<HelloGreetingController> logger, DictionaryForMethod countryDictionary)
+        {
+            _logger = logger;
+            _countryDictionary = countryDictionary;
+        }
+
+        /// <summary>
+        /// Get Method to get the greeting message.
+        /// </summary>
+        [HttpGet]
+        public IActionResult Get()
+        {
+            _logger.LogInformation("Executing GET method.");
+            try
+            {
+                ResponseModel<string> responseModel = new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = "Hello to Greeting App API Endpoint",
+                    Data = "Hello, World"
+                };
+                return Ok(responseModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error in GET method: {ex}");
+                return StatusCode(500, new { Message = "Internal server error", Error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Post Method to return the key and value.
+        /// </summary>
+        [HttpPost("Request")]
+        public IActionResult Post(RequestModel requestModel)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>
+            {
+                Success = true,
+                Message = "Request received successfully",
+                Data = $"Key: {requestModel.key}, Value: {requestModel.value}"
+            };
+            return Ok(responseModel);
+        }
+
+        /// <summary>
+        /// Add a new country.
+        /// </summary>
+        [HttpPost("AddCountry")]
+        public IActionResult AddCountry([FromBody] Dictionary<string, long> newCountry)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+
+            foreach (var entry in newCountry)
+            {
+                if (!_countryDictionary.AddCountry(entry.Key, entry.Value))
+                {
+                    _logger.LogError($"Country '{entry.Key}' already exists.");
+                    responseModel.Success = false;
+                    responseModel.Message = "Country is already present.";
+                    return Conflict(responseModel);
+                }
+            }
+
+            responseModel.Success = true;
+            responseModel.Message = "New country added successfully.";
+            return Created("", responseModel);
+        }
+
+        /// <summary>
+        /// Delete a country.
+        /// </summary>
+        [HttpDelete("{countryName}")]
+        public IActionResult Delete(string countryName)
+        {
+            _logger.LogInformation($"Executing DELETE for country: {countryName}");
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+
+            if (_countryDictionary.DeleteCountry(countryName))
+            {
+                responseModel.Success = true;
+                responseModel.Message = "Country deleted successfully.";
+                return Ok(responseModel);
+            }
+
+            _logger.LogError($"Country '{countryName}' not found.");
+            responseModel.Success = false;
+            responseModel.Message = "Country is not present.";
+            return NotFound(responseModel);
+        }
+
+        /// <summary>
+        /// Update population using PUT (full update).
+        /// </summary>
+        [HttpPut("{key}/{value}")]
+        public IActionResult Put(string key, long value)
+        {
+            _logger.LogInformation($"Executing PUT to update {key} with population {value}");
+
+            bool isUpdated = _countryDictionary.UpdatePopulation(key, value);
+
+            if (!isUpdated)
+            {
+                _logger.LogError($"Country '{key}' not found.");
+                return NotFound(new { Message = "Country not found!" });
+            }
+
+            return Ok(new { Message = "Population updated successfully!" });
+        }
+
+        /// <summary>
+        /// Update population using PATCH (partial update).
+        /// </summary>
+        [HttpPatch]
+        public IActionResult Patch([FromBody] Dictionary<string, long> updateData)
+        {
+            if (updateData == null || !updateData.ContainsKey("key") || !updateData.ContainsKey("value"))
+            {
+                return BadRequest(new { Message = "Invalid request! 'key' (country name) and 'value' (population) are required." });
+            }
+
+            string key = updateData["key"].ToString();
+            long value = updateData["value"];
+
+            _logger.LogInformation($"Executing PATCH to update {key} with population {value}");
+
+            bool isUpdated = _countryDictionary.UpdatePopulation(key, value);
+
+            if (!isUpdated)
+            {
+                _logger.LogError($"Country '{key}' not found.");
+                return NotFound(new { Message = "Country not found!" });
+            }
+
+            return Ok(new { Message = "Population updated successfully!", Data = new { key, value } });
+        }
+    }
+}

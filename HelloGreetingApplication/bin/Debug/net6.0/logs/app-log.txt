@@ -1,0 +1,247 @@
+2025-03-03 20:51:24.2614 | INFO | Now listening on: https://localhost:7223 
+2025-03-03 20:51:24.3394 | INFO | Now listening on: http://localhost:5213 
+2025-03-03 20:51:24.4225 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-03 20:51:24.4225 | INFO | Hosting environment: Development 
+2025-03-03 20:51:24.4225 | INFO | Content root path: D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\ 
+2025-03-03 20:51:26.9782 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger - - 
+2025-03-03 20:51:29.2950 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger - - - 301 0 - 2328.6524ms 
+2025-03-03 20:51:29.4640 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-03 20:51:29.8599 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 395.8983ms 
+2025-03-03 20:51:30.0654 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/swagger-ui.css - - 
+2025-03-03 20:51:30.0654 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.css - - 
+2025-03-03 20:51:30.0654 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/swagger-ui-bundle.js - - 
+2025-03-03 20:51:30.0654 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/swagger-ui-standalone-preset.js - - 
+2025-03-03 20:51:30.0654 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-03 20:51:30.0813 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 12.4125ms 
+2025-03-03 20:51:30.0813 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-03 20:51:30.0939 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 11.4462ms 
+2025-03-03 20:51:30.0939 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-03 20:51:30.3353 | INFO | Sending file. Request path: '/index.css'. Physical path: 'N/A' 
+2025-03-03 20:51:30.4133 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.css - - - 200 202 text/css 344.8498ms 
+2025-03-03 20:51:30.5103 | INFO | Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2025-03-03 20:51:30.5103 | INFO | Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2025-03-03 20:51:30.5200 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/swagger-ui.css - - - 200 154948 text/css 454.6912ms 
+2025-03-03 20:51:30.5200 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/swagger-ui-standalone-preset.js - - - 200 229223 application/javascript 451.2208ms 
+2025-03-03 20:51:30.7739 | INFO | Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2025-03-03 20:51:30.7739 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/swagger-ui-bundle.js - - - 200 1466324 application/javascript 707.4679ms 
+2025-03-03 20:51:30.8764 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 781.5033ms 
+2025-03-03 20:51:31.9684 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-03 20:51:31.9684 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.0394ms 
+2025-03-03 20:51:32.0962 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/favicon-32x32.png - - 
+2025-03-03 20:51:32.1118 | INFO | Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2025-03-03 20:51:32.1251 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/favicon-32x32.png - - - 200 628 image/png 28.8335ms 
+2025-03-03 20:55:29.3992 | INFO | Request starting HTTP/2 GET https://localhost:7223/HelloGreeting - - 
+2025-03-03 20:55:29.4506 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-03 20:55:29.5237 | INFO | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-03 20:55:29.5455 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-03 20:55:29.5688 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 31.3066ms 
+2025-03-03 20:55:29.5688 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-03 20:55:29.5688 | INFO | Request finished HTTP/2 GET https://localhost:7223/HelloGreeting - - - 200 - application/json;+charset=utf-8 172.0356ms 
+2025-03-03 21:16:23.2056 | INFO | Now listening on: https://localhost:7223 
+2025-03-03 21:16:23.2633 | INFO | Now listening on: http://localhost:5213 
+2025-03-03 21:16:23.3332 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-03 21:16:23.3332 | INFO | Hosting environment: Development 
+2025-03-03 21:16:23.3332 | INFO | Content root path: D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\ 
+2025-03-03 21:16:25.3458 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-03 21:16:25.9490 | INFO | Request: GET /Swagger/index.html 
+2025-03-03 21:16:26.1659 | INFO | Response: 200 
+2025-03-03 21:16:26.1790 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 841.5403ms 
+2025-03-03 21:16:26.4720 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-03 21:16:26.4720 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-03 21:16:26.4720 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-03 21:16:26.4832 | INFO | Request: GET /Swagger/index.js 
+2025-03-03 21:16:26.4832 | INFO | Response: 200 
+2025-03-03 21:16:26.4832 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 12.5328ms 
+2025-03-03 21:16:26.4832 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 19.3301ms 
+2025-03-03 21:16:26.9909 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 514.1584ms 
+2025-03-03 21:16:27.8386 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-03 21:16:27.8874 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-03 21:16:27.9394 | INFO | Response: 200 
+2025-03-03 21:16:27.9394 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.6810ms 
+2025-03-04 00:42:56.4886 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 00:42:56.6671 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 00:42:56.9388 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 00:42:56.9722 | INFO | Hosting environment: Development 
+2025-03-04 00:42:57.3802 | INFO | Content root path: D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\ 
+2025-03-04 00:42:58.2097 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 00:42:58.8697 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 00:42:59.0663 | INFO | Response: 200 
+2025-03-04 00:42:59.1283 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 923.6488ms 
+2025-03-04 00:42:59.1283 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 00:42:59.1283 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 00:42:59.1774 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 00:42:59.1774 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 00:42:59.1902 | INFO | Response: 200 
+2025-03-04 00:42:59.1902 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 58.0133ms 
+2025-03-04 00:42:59.1902 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 59.6683ms 
+2025-03-04 00:42:59.3335 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 154.8471ms 
+2025-03-04 00:43:01.1152 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 00:43:01.1152 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 00:43:01.1324 | INFO | Response: 200 
+2025-03-04 00:43:01.1324 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.9014ms 
+2025-03-04 00:46:09.5011 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 00:46:09.6201 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 00:46:09.6425 | INFO | Response: 200 
+2025-03-04 00:46:09.6654 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.6315ms 
+2025-03-04 00:46:53.6055 | INFO | Request starting HTTP/2 GET https://localhost:7223/HelloGreeting - - 
+2025-03-04 00:46:53.6244 | INFO | Request: GET /HelloGreeting 
+2025-03-04 00:46:53.6672 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 00:46:53.7566 | INFO | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:46:53.7888 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 12.0139ms 
+2025-03-04 00:46:53.7986 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 00:46:54.0517 | ERROR | An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'ModelLayer.Model.DictionaryForMethod' while attempting to activate 'HelloGreetingApplication.Controllers.HelloGreetingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\Program.cs:line 42
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 00:46:54.3454 | INFO | Request finished HTTP/2 GET https://localhost:7223/HelloGreeting - - - 500 - text/plain;+charset=utf-8 742.5830ms 
+2025-03-04 00:48:48.1463 | INFO | Request starting HTTP/1.1 POST https://localhost:7223/HelloGreeting application/json 52 
+2025-03-04 00:48:48.1463 | INFO | Request: POST /HelloGreeting 
+2025-03-04 00:48:48.1463 | INFO | Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-04 00:48:48.1639 | INFO | Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-04 00:48:48.1639 | INFO | Response: 405 
+2025-03-04 00:48:48.3723 | INFO | Request finished HTTP/1.1 POST https://localhost:7223/HelloGreeting application/json 52 - 405 0 - 227.3177ms 
+2025-03-04 00:49:45.5506 | INFO | Request starting HTTP/1.1 POST https://localhost:7223/HelloGreeting/Request application/json 52 
+2025-03-04 00:49:45.5653 | INFO | Request: POST /HelloGreeting/Request 
+2025-03-04 00:49:45.5653 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 00:49:45.6320 | INFO | Route matched with {action = "Post", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Post(ModelLayer.Model.RequestModel) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:49:45.6587 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication) in 1.0429ms 
+2025-03-04 00:49:45.6587 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication)' 
+2025-03-04 00:49:45.7763 | ERROR | An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'ModelLayer.Model.DictionaryForMethod' while attempting to activate 'HelloGreetingApplication.Controllers.HelloGreetingController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method5(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\Program.cs:line 42
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 00:49:45.7988 | INFO | Request finished HTTP/1.1 POST https://localhost:7223/HelloGreeting/Request application/json 52 - 500 - text/plain;+charset=utf-8 248.1550ms 
+2025-03-04 00:53:41.3534 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 00:53:41.4608 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 00:53:41.5559 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 00:53:41.5559 | INFO | Hosting environment: Development 
+2025-03-04 00:53:41.5559 | INFO | Content root path: D:\akash gla university\newApp\HelloGreetingApplication\HelloGreetingApplication\ 
+2025-03-04 00:53:44.3579 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 00:53:45.0707 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 00:53:45.4292 | INFO | Response: 200 
+2025-03-04 00:53:45.4649 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 1125.1178ms 
+2025-03-04 00:53:45.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 00:53:45.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 00:53:45.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 00:53:45.6411 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 00:53:45.6612 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 20.0661ms 
+2025-03-04 00:53:45.6612 | INFO | Response: 200 
+2025-03-04 00:53:45.6846 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 39.6263ms 
+2025-03-04 00:53:46.0356 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 389.6822ms 
+2025-03-04 00:53:46.8540 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 00:53:46.8540 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 00:53:46.8684 | INFO | Response: 200 
+2025-03-04 00:53:46.8684 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.9140ms 
+2025-03-04 00:53:54.5575 | INFO | Request starting HTTP/2 GET https://localhost:7223/HelloGreeting - - 
+2025-03-04 00:53:54.5655 | INFO | Request: GET /HelloGreeting 
+2025-03-04 00:53:54.5774 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 00:53:54.6157 | INFO | Route matched with {action = "Get", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:53:54.6459 | INFO | Executing GET method. 
+2025-03-04 00:53:54.6679 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 00:53:54.7002 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication) in 40.3881ms 
+2025-03-04 00:53:54.7079 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Get (HelloGreetingApplication)' 
+2025-03-04 00:53:54.7079 | INFO | Response: 200 
+2025-03-04 00:53:54.7079 | INFO | Request finished HTTP/2 GET https://localhost:7223/HelloGreeting - - - 200 - application/json;+charset=utf-8 156.5492ms 
+2025-03-04 00:57:21.1901 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/AddCountry application/json 46 
+2025-03-04 00:57:21.2056 | INFO | Request: POST /HelloGreeting/AddCountry 
+2025-03-04 00:57:21.2056 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 00:57:21.2893 | INFO | Route matched with {action = "AddCountry", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCountry(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:57:21.4469 | INFO | Executing CreatedResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 00:57:21.4469 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication) in 158.0474ms 
+2025-03-04 00:57:21.4469 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 00:57:21.4469 | INFO | Response: 201 
+2025-03-04 00:57:21.4516 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/AddCountry application/json 46 - 201 - application/json;+charset=utf-8 261.4283ms 
+2025-03-04 00:58:24.1713 | INFO | Request starting HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 24 
+2025-03-04 00:58:24.1713 | INFO | Request: PATCH /HelloGreeting 
+2025-03-04 00:58:24.1713 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 00:58:24.1713 | INFO | Route matched with {action = "Patch", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Patch(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:58:24.1860 | INFO | Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 00:58:24.1860 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication) in 9.3049ms 
+2025-03-04 00:58:24.1860 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 00:58:24.1860 | INFO | Response: 400 
+2025-03-04 00:58:24.1860 | INFO | Request finished HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 24 - 400 - application/json;+charset=utf-8 28.3233ms 
+2025-03-04 00:59:50.7217 | INFO | Request starting HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 44 
+2025-03-04 00:59:50.7217 | INFO | Request: PATCH /HelloGreeting 
+2025-03-04 00:59:50.7217 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 00:59:50.7217 | INFO | Route matched with {action = "Patch", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Patch(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 00:59:50.7699 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-04 00:59:50.7699 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication) in 47.8415ms 
+2025-03-04 00:59:50.7801 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 00:59:50.7801 | INFO | Response: 400 
+2025-03-04 00:59:50.7801 | INFO | Request finished HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 44 - 400 - application/problem+json;+charset=utf-8 59.1789ms 
+2025-03-04 01:01:13.4119 | INFO | Request starting HTTP/1.1 PATCH https://localhost:7223/HelloGreeting application/json 29 
+2025-03-04 01:01:13.4279 | INFO | Request: PATCH /HelloGreeting 
+2025-03-04 01:01:13.4279 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:01:13.4279 | INFO | Route matched with {action = "Patch", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Patch(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 01:01:13.4371 | INFO | Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 01:01:13.4371 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication) in 14.0316ms 
+2025-03-04 01:01:13.4371 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:01:13.4537 | INFO | Response: 400 
+2025-03-04 01:01:13.4537 | INFO | Request finished HTTP/1.1 PATCH https://localhost:7223/HelloGreeting application/json 29 - 400 - application/json;+charset=utf-8 43.0109ms 
+2025-03-04 01:05:51.1772 | INFO | Request starting HTTP/2 DELETE https://localhost:7223/HelloGreeting/India - - 
+2025-03-04 01:05:51.1901 | INFO | Request: DELETE /HelloGreeting/India 
+2025-03-04 01:05:51.1901 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 01:05:51.2112 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 01:05:51.2112 | INFO | Executing DELETE for country: India 
+2025-03-04 01:05:51.2258 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 01:05:51.2258 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 14.0346ms 
+2025-03-04 01:05:51.2258 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 01:05:51.2258 | INFO | Response: 200 
+2025-03-04 01:05:51.2258 | INFO | Request finished HTTP/2 DELETE https://localhost:7223/HelloGreeting/India - - - 200 - application/json;+charset=utf-8 58.0189ms 
+2025-03-04 01:06:18.1368 | INFO | Request starting HTTP/2 PUT https://localhost:7223/HelloGreeting/India/140000000 - 0 
+2025-03-04 01:06:18.1368 | INFO | Request: PUT /HelloGreeting/India/140000000 
+2025-03-04 01:06:18.1368 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (HelloGreetingApplication)' 
+2025-03-04 01:06:18.1500 | INFO | Route matched with {action = "Put", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Put(System.String, Int64) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 01:06:18.1593 | INFO | Executing PUT to update India with population 140000000 
+2025-03-04 01:06:18.1593 | ERROR | Country 'India' not found. 
+2025-03-04 01:06:18.1593 | INFO | Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 01:06:18.1593 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Put (HelloGreetingApplication) in 10.977ms 
+2025-03-04 01:06:18.1593 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Put (HelloGreetingApplication)' 
+2025-03-04 01:06:18.1593 | INFO | Response: 404 
+2025-03-04 01:06:18.1593 | INFO | Request finished HTTP/2 PUT https://localhost:7223/HelloGreeting/India/140000000 - 0 - 404 - application/json;+charset=utf-8 26.5692ms 
+2025-03-04 01:08:27.4412 | INFO | Request starting HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 43 
+2025-03-04 01:08:27.4412 | INFO | Request: PATCH /HelloGreeting 
+2025-03-04 01:08:27.4412 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:08:27.4412 | INFO | Route matched with {action = "Patch", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Patch(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 01:08:27.4588 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-04 01:08:27.4588 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication) in 6.9621ms 
+2025-03-04 01:08:27.4588 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:08:27.4588 | INFO | Response: 400 
+2025-03-04 01:08:27.4701 | INFO | Request finished HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 43 - 400 - application/problem+json;+charset=utf-8 28.9338ms 
+2025-03-04 01:09:17.7349 | INFO | Request starting HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 44 
+2025-03-04 01:09:17.7398 | INFO | Request: PATCH /HelloGreeting 
+2025-03-04 01:09:17.7398 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:09:17.7398 | INFO | Route matched with {action = "Patch", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Patch(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 01:09:17.7398 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-04 01:09:17.7398 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication) in 3.4116ms 
+2025-03-04 01:09:17.7398 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
+2025-03-04 01:09:17.7398 | INFO | Response: 400 
+2025-03-04 01:09:17.7398 | INFO | Request finished HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 44 - 400 - application/problem+json;+charset=utf-8 12.9724ms 
