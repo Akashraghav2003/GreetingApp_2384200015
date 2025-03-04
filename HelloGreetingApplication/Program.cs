@@ -6,6 +6,8 @@ using BusinessLayer.Interface;
 using BusinessLayer.Service;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using RepositoryLayer.Context;
+using Microsoft.EntityFrameworkCore;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 try
@@ -17,8 +19,14 @@ try
 
     builder.Services.AddControllers();
 
+    var connectionString = builder.Configuration.GetConnectionString("sqlConnection");
+    builder.Services.AddDbContext<GreetingContext>(option => option.UseSqlServer(connectionString));
+
+
     builder.Services.AddScoped<IGreetingBL, GreetingBL>();
     builder.Services.AddScoped<IGreetingRL, GreetingRL>();
+    builder.Services.AddScoped<GreetingContext>();
+
     builder.Services.AddSingleton<DictionaryForMethod>();
 
 

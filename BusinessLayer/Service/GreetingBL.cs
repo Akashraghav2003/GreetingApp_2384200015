@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RepositoryLayer.Interface;
 using BusinessLayer.Interface;
+using ModelLayer.Model;
 
 namespace BusinessLayer.Service
 {
@@ -20,23 +21,37 @@ namespace BusinessLayer.Service
 
         public string GreetMessage(string firstName, string lastName)
         {
-            if(firstName == null && lastName != null)
+            try
             {
-                return $"Hello, Mr./Ms. {lastName}.";
-            }else if(firstName != null && lastName == null)
-            {
-                return $"Hello, {firstName}";
+                if (firstName == null && lastName != null)
+                {
+                    return $"Hello, Mr./Ms. {lastName}.";
+                }
+                else if (firstName != null && lastName == null)
+                {
+                    return $"Hello, {firstName}";
+                }
+                else if (firstName == null && lastName == null)
+                {
+                    return "Hello, World";
+                }
+                return $"Hello, {firstName} {lastName}";
             }
-            else if(firstName == null && lastName == null)
+            catch
             {
-                return "Hello, World";
+                throw new Exception();
             }
-            return $"Hello, {firstName} {lastName}";
         }
 
         public string GetGreeting()
         {
            return  _greetingRL.GetGreeting();
+        }
+
+        public string SavedGreeting(GreetingModel greetingModel)
+        {
+                var result = _greetingRL.SavedGreeting(greetingModel);
+                return result; 
         }
     }
 }

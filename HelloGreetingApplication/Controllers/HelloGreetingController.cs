@@ -209,5 +209,36 @@ namespace HelloGreetingApplication.Controllers
                 return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
             }
         }
+
+        /// <summary>
+        /// Method to save the Greeting Message.
+        /// </summary>
+        /// <param name="greetingModel"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [Route("SaveGreeting")]
+        public IActionResult SaveGreeting(GreetingModel greetingModel)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+
+            try
+            {
+                var result = _GreetingBL.SavedGreeting(greetingModel);
+                responseModel.Success = true;
+                responseModel.Message = "Operation held.";
+                responseModel.Data = result;
+
+                return Ok(responseModel);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogCritical(ex.ToString());
+                responseModel.Success = false;
+                responseModel.Message = "Some error occurred.";
+                responseModel.Data = ex.ToString();
+
+                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+            }
+        }
     }
 }
