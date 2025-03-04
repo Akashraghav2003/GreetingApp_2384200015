@@ -16,5 +16,7 @@ namespace RepositoryLayer.Interface
         string SavedGreeting(GreetingModel greetingModel);
 
         GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel);
+
+        List<GreetingEntity> ListGreetingMessage();
     }
 }

@@ -72,5 +72,19 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
+
+        public List<GreetingEntity> ListGreetingMessage()
+        {
+            try
+            {
+                var result = _greetingRL.ListGreetingMessage();
+                return result;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+             
+        }
     }
 }
