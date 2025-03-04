@@ -755,3 +755,63 @@
 --- End of stack trace from previous location ---
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2025-03-04 15:41:48.9079 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 1516.4208ms 
+2025-03-04 15:44:07.8796 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:44:08.3279 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:44:08.9291 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:44:09.2179 | INFO | Hosting environment: Development 
+2025-03-04 15:44:09.3542 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:44:13.7269 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.html - - 
+2025-03-04 15:44:14.9004 | INFO | Request: GET /swagger/index.html 
+2025-03-04 15:44:15.3175 | INFO | Response: 200 
+2025-03-04 15:44:15.3996 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.html - - - 200 - text/html;charset=utf-8 1681.4422ms 
+2025-03-04 15:44:15.8063 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:44:15.8464 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.js - - 
+2025-03-04 15:44:15.8702 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:44:15.8853 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 79.0416ms 
+2025-03-04 15:44:15.8853 | INFO | Request: GET /swagger/index.js 
+2025-03-04 15:44:15.8853 | INFO | Response: 200 
+2025-03-04 15:44:15.8853 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.js - - - 200 - application/javascript;charset=utf-8 51.4895ms 
+2025-03-04 15:44:16.3489 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 478.6431ms 
+2025-03-04 15:44:16.4691 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - 
+2025-03-04 15:44:16.4691 | INFO | Request: GET /swagger/v1/swagger.json 
+2025-03-04 15:44:16.5282 | INFO | Response: 200 
+2025-03-04 15:44:16.5282 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.1867ms 
+2025-03-04 15:48:16.7511 | INFO | Request starting HTTP/2 DELETE https://localhost:7223/HelloGreeting/asd - - 
+2025-03-04 15:48:16.8420 | INFO | Request: DELETE /HelloGreeting/asd 
+2025-03-04 15:48:16.9010 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:48:17.0317 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:48:17.1810 | INFO | Executing DELETE for country: asd 
+2025-03-04 15:48:17.1853 | ERROR | Country 'asd' not found. 
+2025-03-04 15:48:17.2062 | INFO | Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:48:17.2466 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 199.3728ms 
+2025-03-04 15:48:17.2466 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:48:17.2466 | INFO | Response: 404 
+2025-03-04 15:48:17.2466 | INFO | Request finished HTTP/2 DELETE https://localhost:7223/HelloGreeting/asd - - - 404 - application/json;+charset=utf-8 499.9052ms 
+2025-03-04 15:49:06.4683 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/Delete application/json 17 
+2025-03-04 15:49:06.4683 | INFO | Request: DELETE /HelloGreeting/Delete 
+2025-03-04 15:49:06.4683 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:49:06.4683 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:49:06.4794 | INFO | Executing DELETE for country: Delete 
+2025-03-04 15:49:06.4794 | ERROR | Country 'Delete' not found. 
+2025-03-04 15:49:06.4794 | INFO | Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:49:06.4794 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 16.669ms 
+2025-03-04 15:49:06.4938 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:49:06.4938 | INFO | Response: 404 
+2025-03-04 15:49:06.4938 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/Delete application/json 17 - 404 - application/json;+charset=utf-8 28.4432ms 
+2025-03-04 15:49:25.3395 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 17 
+2025-03-04 15:49:25.3395 | INFO | Request: DELETE /HelloGreeting/ 
+2025-03-04 15:49:25.3395 | INFO | Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:49:25.3395 | INFO | Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:49:25.3395 | INFO | Response: 405 
+2025-03-04 15:49:25.3395 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 17 - 405 0 - 7.6501ms 
+2025-03-04 15:49:32.9129 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/Delete application/json 17 
+2025-03-04 15:49:32.9129 | INFO | Request: DELETE /HelloGreeting/Delete 
+2025-03-04 15:49:32.9129 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:49:32.9177 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:49:32.9177 | INFO | Executing DELETE for country: Delete 
+2025-03-04 15:49:32.9177 | ERROR | Country 'Delete' not found. 
+2025-03-04 15:49:32.9177 | INFO | Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:49:32.9177 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 1.8135ms 
+2025-03-04 15:49:32.9177 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:49:32.9177 | INFO | Response: 404 
+2025-03-04 15:49:32.9177 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/Delete application/json 17 - 404 - application/json;+charset=utf-8 17.2013ms 
