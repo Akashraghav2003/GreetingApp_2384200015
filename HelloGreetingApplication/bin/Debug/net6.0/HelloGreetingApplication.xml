@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloGreetingApplication</name>
+    </assembly>
+    <members>
+        <member name="T:HelloGreetingApplication.Controllers.HelloGreetingController">
+            <summary>
+            Class providing API for HelloGreeting
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.Get">
+            <summary>
+            Get Method to get the greeting message.
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.Post(ModelLayer.Model.RequestModel)">
+            <summary>
+            Post Method to return the key and value.
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry(System.Collections.Generic.Dictionary{System.String,System.Int64})">
+            <summary>
+            Add a new country.
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.Delete(System.String)">
+            <summary>
+            Delete a country.
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.Put(System.String,System.Int64)">
+            <summary>
+            Update population using PUT (full update).
+            </summary>
+        </member>
+        <member name="M:HelloGreetingApplication.Controllers.HelloGreetingController.Patch(System.Collections.Generic.Dictionary{System.String,System.Int64})">
+            <summary>
+            Update population using PATCH (partial update).
+            </summary>
+        </member>
+    </members>
+</doc>

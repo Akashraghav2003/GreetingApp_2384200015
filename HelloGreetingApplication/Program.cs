@@ -2,6 +2,7 @@ using Microsoft.OpenApi.Models;
 using ModelLayer.Model;
 using NLog;
 using NLog.Web;
+using System.Reflection;
 
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
@@ -31,6 +32,8 @@ try
 
             }
         });
+        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFile));
     });
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();

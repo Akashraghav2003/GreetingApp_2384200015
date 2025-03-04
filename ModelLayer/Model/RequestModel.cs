@@ -11,6 +11,6 @@ namespace ModelLayer.Model
         public string? key { get; set; }
 
         public double? value { get; set; }
-        //public Dictionary<string, int>? countryPopulation { get; set; }
+        
     }
 }

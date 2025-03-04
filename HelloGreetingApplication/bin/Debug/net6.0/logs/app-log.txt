@@ -245,3 +245,513 @@
 2025-03-04 01:09:17.7398 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Patch (HelloGreetingApplication)' 
 2025-03-04 01:09:17.7398 | INFO | Response: 400 
 2025-03-04 01:09:17.7398 | INFO | Request finished HTTP/2 PATCH https://localhost:7223/HelloGreeting application/json 44 - 400 - application/problem+json;+charset=utf-8 12.9724ms 
+2025-03-04 15:05:09.2132 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:05:09.2597 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:05:09.3304 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:05:09.3304 | INFO | Hosting environment: Development 
+2025-03-04 15:05:09.3304 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:05:10.3831 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:05:12.1811 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:05:12.5436 | INFO | Response: 200 
+2025-03-04 15:05:12.6692 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:05:12.6816 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:05:12.6978 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:05:12.7026 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:05:12.6692 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 2224.6602ms 
+2025-03-04 15:05:12.7026 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 44.3603ms 
+2025-03-04 15:05:12.7026 | INFO | Response: 200 
+2025-03-04 15:05:12.7178 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 36.2615ms 
+2025-03-04 15:05:12.8674 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 169.5768ms 
+2025-03-04 15:05:13.0219 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:05:13.0219 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:05:13.0449 | INFO | Response: 200 
+2025-03-04 15:05:13.0475 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.4835ms 
+2025-03-04 15:14:42.6719 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:14:42.7228 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:14:42.8439 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:14:42.8665 | INFO | Hosting environment: Development 
+2025-03-04 15:14:42.8819 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:14:43.6692 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:14:43.9271 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:14:44.1347 | INFO | Response: 200 
+2025-03-04 15:14:44.1532 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 484.3665ms 
+2025-03-04 15:14:44.2565 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:14:44.2565 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:14:44.2565 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:14:44.2657 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:14:44.2657 | INFO | Response: 200 
+2025-03-04 15:14:44.2657 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 16.1164ms 
+2025-03-04 15:14:44.2657 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 17.8943ms 
+2025-03-04 15:14:44.4467 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 188.5481ms 
+2025-03-04 15:14:45.6043 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:14:45.6171 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:14:45.6676 | INFO | Response: 200 
+2025-03-04 15:14:45.6764 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.0982ms 
+2025-03-04 15:18:21.8499 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/AddCountry application/json 74 
+2025-03-04 15:18:21.8950 | INFO | Request: POST /HelloGreeting/AddCountry 
+2025-03-04 15:18:21.9313 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 15:18:22.0436 | INFO | Route matched with {action = "AddCountry", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCountry(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:18:22.2648 | INFO | Executing CreatedResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:18:22.2863 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication) in 228.7343ms 
+2025-03-04 15:18:22.2863 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 15:18:22.2863 | INFO | Response: 201 
+2025-03-04 15:18:22.2863 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/AddCountry application/json 74 - 201 - application/json;+charset=utf-8 444.2809ms 
+2025-03-04 15:18:47.0309 | INFO | Request starting HTTP/1.1 POST https://localhost:7223/HelloGreeting/AddCountry application/json 29 
+2025-03-04 15:18:47.0309 | INFO | Request: POST /HelloGreeting/AddCountry 
+2025-03-04 15:18:47.0309 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 15:18:47.0309 | INFO | Route matched with {action = "AddCountry", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCountry(System.Collections.Generic.Dictionary`2[System.String,System.Int64]) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:18:47.0468 | INFO | Executing CreatedResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:18:47.0468 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication) in 15.106ms 
+2025-03-04 15:18:47.0468 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.AddCountry (HelloGreetingApplication)' 
+2025-03-04 15:18:47.0468 | INFO | Response: 201 
+2025-03-04 15:18:47.0468 | INFO | Request finished HTTP/1.1 POST https://localhost:7223/HelloGreeting/AddCountry application/json 29 - 201 - application/json;+charset=utf-8 20.8228ms 
+2025-03-04 15:21:14.9613 | INFO | Request starting HTTP/2 DELETE https://localhost:7223/HelloGreeting/Inasd - - 
+2025-03-04 15:21:14.9613 | INFO | Request: DELETE /HelloGreeting/Inasd 
+2025-03-04 15:21:14.9613 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:21:14.9704 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:21:14.9823 | INFO | Executing DELETE for country: Inasd 
+2025-03-04 15:21:14.9823 | ERROR | Country 'Inasd' not found. 
+2025-03-04 15:21:14.9823 | INFO | Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:21:14.9823 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 10.9839ms 
+2025-03-04 15:21:14.9823 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:21:14.9823 | INFO | Response: 404 
+2025-03-04 15:21:14.9823 | INFO | Request finished HTTP/2 DELETE https://localhost:7223/HelloGreeting/Inasd - - - 404 - application/json;+charset=utf-8 28.5026ms 
+2025-03-04 15:21:37.7985 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/AddCountry application/json 29 
+2025-03-04 15:21:37.7985 | INFO | Request: DELETE /HelloGreeting/AddCountry 
+2025-03-04 15:21:37.7985 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:21:37.7985 | INFO | Route matched with {action = "Delete", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(System.String) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 15:21:37.7985 | INFO | Executing DELETE for country: AddCountry 
+2025-03-04 15:21:37.7985 | ERROR | Country 'AddCountry' not found. 
+2025-03-04 15:21:37.7985 | INFO | Executing NotFoundObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 15:21:37.7985 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication) in 1.5514ms 
+2025-03-04 15:21:37.7985 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication)' 
+2025-03-04 15:21:37.7985 | INFO | Response: 404 
+2025-03-04 15:21:37.7985 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/AddCountry application/json 29 - 404 - application/json;+charset=utf-8 6.7966ms 
+2025-03-04 15:22:14.2716 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting application/json 29 
+2025-03-04 15:22:14.2716 | INFO | Request: DELETE /HelloGreeting 
+2025-03-04 15:22:14.2716 | INFO | Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:14.2808 | INFO | Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:14.2808 | INFO | Response: 405 
+2025-03-04 15:22:14.2808 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting application/json 29 - 405 0 - 9.7244ms 
+2025-03-04 15:22:25.0184 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 29 
+2025-03-04 15:22:25.0184 | INFO | Request: DELETE /HelloGreeting/ 
+2025-03-04 15:22:25.0184 | INFO | Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:25.0184 | INFO | Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:25.0184 | INFO | Response: 405 
+2025-03-04 15:22:25.0184 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 29 - 405 0 - 2.2376ms 
+2025-03-04 15:22:50.9142 | INFO | Request starting HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 17 
+2025-03-04 15:22:50.9142 | INFO | Request: DELETE /HelloGreeting/ 
+2025-03-04 15:22:50.9142 | INFO | Executing endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:50.9205 | INFO | Executed endpoint '405 HTTP Method Not Supported' 
+2025-03-04 15:22:50.9205 | INFO | Response: 405 
+2025-03-04 15:22:50.9205 | INFO | Request finished HTTP/1.1 DELETE https://localhost:7223/HelloGreeting/ application/json 17 - 405 0 - 6.6745ms 
+2025-03-04 15:26:30.9321 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:26:31.0817 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:26:31.5406 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:26:31.7188 | INFO | Hosting environment: Development 
+2025-03-04 15:26:31.7362 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:26:33.7191 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:26:34.4007 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:26:34.9185 | INFO | Response: 200 
+2025-03-04 15:26:34.9396 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 1228.4841ms 
+2025-03-04 15:26:35.1679 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:26:35.1679 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:26:35.1679 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:26:35.1871 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 19.1211ms 
+2025-03-04 15:26:35.2191 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:26:35.2535 | INFO | Response: 200 
+2025-03-04 15:26:35.2535 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 87.0247ms 
+2025-03-04 15:26:35.5198 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 351.6658ms 
+2025-03-04 15:26:38.1637 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:26:38.1783 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:26:38.4449 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:26:38.5159 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 352.1616ms 
+2025-03-04 15:26:50.2266 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:26:50.2391 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:26:50.2391 | INFO | Response: 200 
+2025-03-04 15:26:50.2391 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 15.4964ms 
+2025-03-04 15:26:50.2843 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:26:50.2843 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:26:50.2843 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:26:50.2843 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:26:50.2843 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 4.6989ms 
+2025-03-04 15:26:50.2843 | INFO | Response: 200 
+2025-03-04 15:26:50.2843 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 4.6474ms 
+2025-03-04 15:26:50.3604 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.6447ms 
+2025-03-04 15:26:50.6161 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:26:50.6232 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:26:50.6938 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:26:50.7018 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 85.6540ms 
+2025-03-04 15:26:51.6991 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:26:51.7164 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:26:51.7197 | INFO | Response: 200 
+2025-03-04 15:26:51.7197 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 25.2377ms 
+2025-03-04 15:26:51.7727 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:26:51.7727 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:26:51.7727 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:26:51.7727 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:26:51.7727 | INFO | Response: 200 
+2025-03-04 15:26:51.7727 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 1.1581ms 
+2025-03-04 15:26:51.7727 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.3771ms 
+2025-03-04 15:26:51.8360 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.0622ms 
+2025-03-04 15:26:52.0378 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:26:52.0450 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:26:52.1151 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:26:52.1151 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 83.4416ms 
+2025-03-04 15:26:59.4673 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:26:59.4814 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:26:59.4841 | INFO | Response: 200 
+2025-03-04 15:26:59.4841 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 17.8147ms 
+2025-03-04 15:26:59.5129 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:26:59.5129 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:26:59.5129 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:26:59.5139 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 1.0576ms 
+2025-03-04 15:26:59.5139 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:26:59.5139 | INFO | Response: 200 
+2025-03-04 15:26:59.5139 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.9449ms 
+2025-03-04 15:26:59.5326 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.3584ms 
+2025-03-04 15:26:59.7814 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:26:59.7814 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:26:59.8580 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:26:59.8580 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 79.5248ms 
+2025-03-04 15:27:17.8856 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:27:17.9348 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:27:17.9847 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:27:17.9847 | INFO | Hosting environment: Development 
+2025-03-04 15:27:17.9847 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:27:18.9700 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:27:19.3163 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:27:19.5713 | INFO | Response: 200 
+2025-03-04 15:27:19.6530 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:27:19.6592 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:27:19.6073 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 623.6526ms 
+2025-03-04 15:27:19.6731 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:27:19.6965 | INFO | Response: 200 
+2025-03-04 15:27:19.6965 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:27:19.6965 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 41.7386ms 
+2025-03-04 15:27:19.7338 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 80.7653ms 
+2025-03-04 15:27:19.8588 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 158.1600ms 
+2025-03-04 15:27:20.4351 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:27:20.4351 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:27:20.5578 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:27:20.5785 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 143.4531ms 
+2025-03-04 15:27:44.4954 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:27:44.5293 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:27:44.5303 | INFO | Response: 200 
+2025-03-04 15:27:44.5303 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 35.2921ms 
+2025-03-04 15:27:44.5631 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:27:44.5631 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:27:44.5631 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:27:44.5631 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:27:44.5631 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 1.2681ms 
+2025-03-04 15:27:44.5631 | INFO | Response: 200 
+2025-03-04 15:27:44.5631 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 1.9963ms 
+2025-03-04 15:27:44.7096 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 145.7009ms 
+2025-03-04 15:27:44.9143 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:27:44.9143 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:27:45.0052 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:27:45.0052 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 99.4288ms 
+2025-03-04 15:29:24.3569 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:29:24.3912 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:29:24.4445 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:29:24.4445 | INFO | Hosting environment: Development 
+2025-03-04 15:29:24.4445 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:29:25.4981 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:29:25.9239 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:29:26.1437 | INFO | Response: 200 
+2025-03-04 15:29:26.1658 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 669.0863ms 
+2025-03-04 15:29:26.2298 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:29:26.2298 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:29:26.2298 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:29:26.2298 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:29:26.2374 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 7.6328ms 
+2025-03-04 15:29:26.2374 | INFO | Response: 200 
+2025-03-04 15:29:26.2374 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 14.5678ms 
+2025-03-04 15:29:26.4072 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 177.0493ms 
+2025-03-04 15:29:27.0611 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:29:27.0611 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:29:27.1781 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:29:27.2057 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 144.5709ms 
+2025-03-04 15:33:00.4787 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:33:00.6000 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:33:00.8760 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:33:01.0685 | INFO | Hosting environment: Development 
+2025-03-04 15:33:01.1128 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:33:02.3200 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 15:33:02.7649 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 15:33:02.9968 | INFO | Response: 200 
+2025-03-04 15:33:03.0198 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 702.8120ms 
+2025-03-04 15:33:03.1740 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:33:03.1895 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 15:33:03.1895 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:33:03.2123 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 15:33:03.3321 | INFO | Response: 200 
+2025-03-04 15:33:03.3321 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 151.9418ms 
+2025-03-04 15:33:03.3630 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 189.0148ms 
+2025-03-04 15:33:03.5860 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 396.2423ms 
+2025-03-04 15:33:04.3495 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 15:33:04.3495 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 15:33:04.6479 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:33:04.7025 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 352.9488ms 
+2025-03-04 15:35:09.3188 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:35:09.3794 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:35:09.5359 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:35:09.5633 | INFO | Hosting environment: Development 
+2025-03-04 15:35:09.5869 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:35:10.3287 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger - - 
+2025-03-04 15:35:10.6643 | INFO | Request: GET /swagger 
+2025-03-04 15:35:10.6861 | INFO | Response: 301 
+2025-03-04 15:35:10.6861 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger - - - 301 0 - 373.2547ms 
+2025-03-04 15:35:10.7526 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.html - - 
+2025-03-04 15:35:10.7526 | INFO | Request: GET /swagger/index.html 
+2025-03-04 15:35:10.9458 | INFO | Response: 200 
+2025-03-04 15:35:10.9458 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.html - - - 200 - text/html;charset=utf-8 194.6559ms 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.css - - 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui.css - - 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui-bundle.js - - 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui-standalone-preset.js - - 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.js - - 
+2025-03-04 15:35:10.9847 | INFO | Request: GET /swagger/index.css 
+2025-03-04 15:35:10.9847 | INFO | Request: GET /swagger/swagger-ui-bundle.js 
+2025-03-04 15:35:10.9847 | INFO | Request: GET /swagger/index.js 
+2025-03-04 15:35:10.9847 | INFO | Request: GET /swagger/swagger-ui-standalone-preset.js 
+2025-03-04 15:35:10.9847 | INFO | Response: 200 
+2025-03-04 15:35:10.9847 | INFO | Request: GET /swagger/swagger-ui.css 
+2025-03-04 15:35:10.9847 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.4119ms 
+2025-03-04 15:35:10.9847 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:35:11.0456 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:35:11.1041 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 112.9875ms 
+2025-03-04 15:35:11.1569 | INFO | Sending file. Request path: '/index.css'. Physical path: 'N/A' 
+2025-03-04 15:35:11.3025 | INFO | Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2025-03-04 15:35:11.3025 | INFO | Response: 200 
+2025-03-04 15:35:11.3025 | INFO | Response: 200 
+2025-03-04 15:35:11.3119 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui.css - - - 200 154948 text/css 326.6960ms 
+2025-03-04 15:35:11.3119 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.css - - - 200 202 text/css 327.4786ms 
+2025-03-04 15:35:11.3119 | INFO | Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2025-03-04 15:35:11.3285 | INFO | Response: 200 
+2025-03-04 15:35:11.3493 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui-standalone-preset.js - - - 200 229223 application/javascript 364.0010ms 
+2025-03-04 15:35:11.5727 | INFO | Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2025-03-04 15:35:11.5727 | INFO | Response: 200 
+2025-03-04 15:35:11.5727 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui-bundle.js - - - 200 1466324 application/javascript 590.5033ms 
+2025-03-04 15:35:11.6541 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 608.4597ms 
+2025-03-04 15:35:12.7047 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - 
+2025-03-04 15:35:12.7047 | INFO | Request: GET /swagger/v1/swagger.json 
+2025-03-04 15:35:12.7736 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/favicon-32x32.png - - 
+2025-03-04 15:35:12.8543 | INFO | Request: GET /swagger/favicon-32x32.png 
+2025-03-04 15:35:12.8607 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Delete (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:35:12.9026 | INFO | Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2025-03-04 15:35:12.9489 | INFO | Response: 200 
+2025-03-04 15:35:12.9489 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/favicon-32x32.png - - - 200 628 image/png 175.6911ms 
+2025-03-04 15:35:12.9559 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 251.0639ms 
+2025-03-04 15:36:30.3236 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:36:30.3597 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:36:30.4165 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:36:30.4165 | INFO | Hosting environment: Development 
+2025-03-04 15:36:30.4214 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:36:31.9917 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.html - - 
+2025-03-04 15:36:32.2743 | INFO | Request: GET /swagger/index.html 
+2025-03-04 15:36:32.4527 | INFO | Response: 200 
+2025-03-04 15:36:32.4855 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:36:32.5273 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.js - - 
+2025-03-04 15:36:32.5273 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:36:32.4683 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.html - - - 200 - text/html;charset=utf-8 480.6685ms 
+2025-03-04 15:36:32.5837 | INFO | Request: GET /swagger/index.js 
+2025-03-04 15:36:32.5837 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 104.0174ms 
+2025-03-04 15:36:32.6428 | INFO | Response: 200 
+2025-03-04 15:36:32.6681 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.js - - - 200 - application/javascript;charset=utf-8 140.7975ms 
+2025-03-04 15:36:32.7894 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 261.8348ms 
+2025-03-04 15:36:33.4581 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - 
+2025-03-04 15:36:33.4581 | INFO | Request: GET /swagger/v1/swagger.json 
+2025-03-04 15:36:33.7271 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:36:33.7713 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 313.2898ms 
+2025-03-04 15:38:55.7105 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:38:55.7550 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:38:55.9623 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:38:55.9623 | INFO | Hosting environment: Development 
+2025-03-04 15:38:55.9623 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:38:56.9756 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger - - 
+2025-03-04 15:38:57.3062 | INFO | Request: GET /swagger 
+2025-03-04 15:38:57.3330 | INFO | Response: 301 
+2025-03-04 15:38:57.3485 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger - - - 301 0 - 375.2941ms 
+2025-03-04 15:38:57.3885 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.html - - 
+2025-03-04 15:38:57.4374 | INFO | Request: GET /swagger/index.html 
+2025-03-04 15:38:57.6141 | INFO | Response: 200 
+2025-03-04 15:38:57.6141 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.html - - - 200 - text/html;charset=utf-8 226.7889ms 
+2025-03-04 15:38:57.6355 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui.css - - 
+2025-03-04 15:38:57.6411 | INFO | Request: GET /swagger/swagger-ui.css 
+2025-03-04 15:38:57.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.css - - 
+2025-03-04 15:38:57.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui-bundle.js - - 
+2025-03-04 15:38:57.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/swagger-ui-standalone-preset.js - - 
+2025-03-04 15:38:57.6411 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.js - - 
+2025-03-04 15:38:57.6411 | INFO | Request: GET /swagger/index.css 
+2025-03-04 15:38:57.6411 | INFO | Request: GET /swagger/swagger-ui-bundle.js 
+2025-03-04 15:38:57.6411 | INFO | Request: GET /swagger/index.js 
+2025-03-04 15:38:57.6411 | INFO | Request: GET /swagger/swagger-ui-standalone-preset.js 
+2025-03-04 15:38:57.6570 | INFO | Response: 200 
+2025-03-04 15:38:57.6791 | INFO | Sending file. Request path: '/index.css'. Physical path: 'N/A' 
+2025-03-04 15:38:57.6856 | INFO | Response: 200 
+2025-03-04 15:38:57.7047 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:38:57.7179 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:38:57.7354 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.js - - - 200 - application/javascript;charset=utf-8 85.9270ms 
+2025-03-04 15:38:57.7354 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 31.7974ms 
+2025-03-04 15:38:57.7354 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.css - - - 200 202 text/css 102.0122ms 
+2025-03-04 15:38:57.7796 | INFO | Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2025-03-04 15:38:57.7796 | INFO | Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2025-03-04 15:38:57.7796 | INFO | Response: 200 
+2025-03-04 15:38:57.7796 | INFO | Response: 200 
+2025-03-04 15:38:57.7796 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui-standalone-preset.js - - - 200 229223 application/javascript 144.6695ms 
+2025-03-04 15:38:57.7796 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui.css - - - 200 154948 text/css 158.6685ms 
+2025-03-04 15:38:57.9105 | INFO | Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2025-03-04 15:38:57.9105 | INFO | Response: 200 
+2025-03-04 15:38:57.9105 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/swagger-ui-bundle.js - - - 200 1466324 application/javascript 265.4410ms 
+2025-03-04 15:38:57.9841 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 266.2101ms 
+2025-03-04 15:38:58.2122 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - 
+2025-03-04 15:38:58.2122 | INFO | Request: GET /swagger/v1/swagger.json 
+2025-03-04 15:38:58.3018 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/favicon-32x32.png - - 
+2025-03-04 15:38:58.3018 | INFO | Request: GET /swagger/favicon-32x32.png 
+2025-03-04 15:38:58.3018 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:38:58.3018 | INFO | Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2025-03-04 15:38:58.3313 | INFO | Response: 200 
+2025-03-04 15:38:58.3313 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/favicon-32x32.png - - - 200 628 image/png 29.7577ms 
+2025-03-04 15:38:58.3313 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 123.4813ms 
+2025-03-04 15:41:36.5930 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 15:41:36.7605 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 15:41:37.5911 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 15:41:37.8593 | INFO | Hosting environment: Development 
+2025-03-04 15:41:37.9146 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 15:41:43.5866 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.html - - 
+2025-03-04 15:41:45.3551 | INFO | Request: GET /swagger/index.html 
+2025-03-04 15:41:45.7393 | INFO | Response: 200 
+2025-03-04 15:41:45.7799 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.html - - - 200 - text/html;charset=utf-8 2198.7499ms 
+2025-03-04 15:41:45.9959 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 15:41:45.9959 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/index.js - - 
+2025-03-04 15:41:45.9959 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 15:41:46.0148 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 18.8471ms 
+2025-03-04 15:41:46.0148 | INFO | Request: GET /swagger/index.js 
+2025-03-04 15:41:46.0148 | INFO | Response: 200 
+2025-03-04 15:41:46.0148 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/index.js - - - 200 - application/javascript;charset=utf-8 25.4653ms 
+2025-03-04 15:41:47.1173 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1117.7752ms 
+2025-03-04 15:41:47.3915 | INFO | Request starting HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - 
+2025-03-04 15:41:47.5116 | INFO | Request: GET /swagger/v1/swagger.json 
+2025-03-04 15:41:48.4032 | ERROR | An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HelloGreetingApplication.Controllers.HelloGreetingController.Post (HelloGreetingApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.SelectEnumerableIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`3 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c__DisplayClass0_0.<<<Main>$>b__1>d.MoveNext() in D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\Program.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-04 15:41:48.9079 | INFO | Request finished HTTP/2 GET https://localhost:7223/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 1516.4208ms 

@@ -1016,11 +1016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
+      "projectUniqueName": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
       "projectName": "HelloGreetingApplication",
-      "projectPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
+      "projectPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\HelloGreetingApplication\\HelloGreetingApplication.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\HelloGreetingApplication\\obj\\",
+      "outputPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\HelloGreetingApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1041,8 +1041,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\akash gla university\\newApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\BusinessLayer\\BusinessLayer.csproj"
+            "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\BusinessLayer\\BusinessLayer.csproj"
             }
           }
         }

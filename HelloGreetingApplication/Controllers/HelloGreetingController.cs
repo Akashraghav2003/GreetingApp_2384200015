@@ -47,7 +47,8 @@ namespace HelloGreetingApplication.Controllers
         /// <summary>
         /// Post Method to return the key and value.
         /// </summary>
-        [HttpPost("Request")]
+        [HttpPost]
+        [Route("Request")]
         public IActionResult Post(RequestModel requestModel)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>
