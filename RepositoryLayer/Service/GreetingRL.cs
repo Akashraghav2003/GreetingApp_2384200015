@@ -103,5 +103,36 @@ namespace RepositoryLayer.Service
                 throw new Exception();
             }
         }
+
+        public string UpdateGreeting(UpdateGreetingModel updateGreetingModel)
+        {
+            if (updateGreetingModel == null || string.IsNullOrWhiteSpace(updateGreetingModel.greetingMessage))
+            {
+                throw new ArgumentException("Invalid Greeting Message");
+            }
+            try
+            {
+                var result = _dbContext.GreetingEntities.FirstOrDefault<GreetingEntity>(e => e.id == updateGreetingModel.id);
+
+                if(result == null)
+                {
+                    throw new KeyNotFoundException($"ID {updateGreetingModel.id} not found.");
+                }
+
+                result.greetingMessage = updateGreetingModel.greetingMessage;
+
+                _dbContext.SaveChanges();
+                return "Greeting Message Updaet succesfull.";
+            }
+            catch(KeyNotFoundException ex)
+            {
+                return "KeyNotFoundException"; 
+                
+            }
+            catch(Exception ex)
+            {
+                throw new Exception();
+            }
+        }
     }
 }
