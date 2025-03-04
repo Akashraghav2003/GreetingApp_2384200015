@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectUniqueName": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\RepositoryLayer\\RepositoryLayer.csproj",
       "projectName": "RepositoryLayer",
-      "projectPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\RepositoryLayer\\RepositoryLayer.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\RepositoryLayer\\obj\\",
+      "outputPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\RepositoryLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\akash gla university\\newApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj": {
-              "projectPath": "D:\\akash gla university\\newApp\\HelloGreetingApplication\\ModelLayer\\ModelLayer.csproj"
+            "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\ModelLayer\\ModelLayer.csproj": {
+              "projectPath": "D:\\akash gla university\\CG_HelloAPP\\GreetingApp_2384200015\\ModelLayer\\ModelLayer.csproj"
             }
           }
         }
