@@ -53,6 +53,26 @@ namespace RepositoryLayer.Service
             return "HelloWorld";
         }
 
+        public List<GreetingEntity> ListGreetingMessage()
+        {
+            try
+            {
+                var result = _dbContext.GreetingEntities.ToList();
+                if (result == null)
+                {
+                    throw new Exception("There is not Greeting Present.");
+                }
+
+                return result;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+
+
+        }
+
         public string SavedGreeting(GreetingModel greetingModel)
         {
 

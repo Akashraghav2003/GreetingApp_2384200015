@@ -2,6 +2,7 @@
 using ModelLayer.Model;
 using NLog.Web;
 using BusinessLayer.Interface;
+using RepositoryLayer.Entity;
 namespace HelloGreetingApplication.Controllers
 {
     /// <summary>
@@ -243,7 +244,11 @@ namespace HelloGreetingApplication.Controllers
             
         }
 
-
+        /// <summary>
+        /// Checking the greeting by id
+        /// </summary>
+        /// <param name="checkGreetingModel"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("CheckGreeting")]
 
@@ -269,6 +274,35 @@ namespace HelloGreetingApplication.Controllers
 
                 return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
             }
+        }
+
+        [HttpGet]
+        [Route("ListOfGreeting")]
+
+        public IActionResult ListOfGreeting()
+        {
+            ResponseModel<List<GreetingEntity>> responseModel = new ResponseModel<List<GreetingEntity>>();
+            try
+            {
+                _logger.LogInformation("Data of Greeting");
+                var result = _GreetingBL.ListGreetingMessage();
+
+                responseModel.Success = true;
+                responseModel.Message = "All Greeting present in database.";
+                responseModel.Data = result;
+
+                return Ok(responseModel);
+
+
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("Some Error Occurred" + ex);
+                return StatusCode(500, new { Error = "An error occurred.", Details = ex.Message });
+            }
+
+
+
         }
     }
 }
