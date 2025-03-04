@@ -8,8 +8,8 @@ namespace ModelLayer.Model
 {
     public class ResponseClass
     {
-        public string? key { get; set; }
+        public string? firstName { get; set; } = null;
 
-        public long value { get; set; }
+        public string? lastName { get; set; } = null;
     }
 }
