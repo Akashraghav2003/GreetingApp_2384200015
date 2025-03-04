@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using NLog.Web;
-
+using BusinessLayer.Interface;
 namespace HelloGreetingApplication.Controllers
 {
     /// <summary>
@@ -11,11 +11,13 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
     {
+        private readonly IGreetingBL _GreetingBL;
         private readonly ILogger<HelloGreetingController> _logger;
         private readonly DictionaryForMethod _countryDictionary;
 
-        public HelloGreetingController(ILogger<HelloGreetingController> logger, DictionaryForMethod countryDictionary)
+        public HelloGreetingController(IGreetingBL GreetingBL,ILogger<HelloGreetingController> logger, DictionaryForMethod countryDictionary)
         {
+            _GreetingBL = GreetingBL;
             _logger = logger;
             _countryDictionary = countryDictionary;
         }
@@ -66,21 +68,29 @@ namespace HelloGreetingApplication.Controllers
         public IActionResult AddCountry([FromBody] Dictionary<string, long> newCountry)
         {
             ResponseModel<string> responseModel = new ResponseModel<string>();
-
-            foreach (var entry in newCountry)
+            try
             {
-                if (!_countryDictionary.AddCountry(entry.Key, entry.Value))
+                foreach (var entry in newCountry)
                 {
-                    _logger.LogError($"Country '{entry.Key}' already exists.");
-                    responseModel.Success = false;
-                    responseModel.Message = "Country is already present.";
-                    return Conflict(responseModel);
+                    if (!_countryDictionary.AddCountry(entry.Key, entry.Value))
+                    {
+                        _logger.LogError($"Country '{entry.Key}' already exists.");
+                        responseModel.Success = false;
+                        responseModel.Message = "Country is already present.";
+                        return Conflict(responseModel);
+                    }
                 }
+                responseModel.Success = true;
+                responseModel.Message = "New country added successfully.";
+                return Created("", responseModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Country is already present " + ex);
+                return Conflict(responseModel);
             }
 
-            responseModel.Success = true;
-            responseModel.Message = "New country added successfully.";
-            return Created("", responseModel);
+            
         }
 
         /// <summary>
@@ -91,18 +101,28 @@ namespace HelloGreetingApplication.Controllers
         {
             _logger.LogInformation($"Executing DELETE for country: {countryName}");
             ResponseModel<string> responseModel = new ResponseModel<string>();
-
-            if (_countryDictionary.DeleteCountry(countryName))
+            try
             {
-                responseModel.Success = true;
-                responseModel.Message = "Country deleted successfully.";
-                return Ok(responseModel);
+                if (_countryDictionary.DeleteCountry(countryName))
+                {
+                    responseModel.Success = true;
+                    responseModel.Message = "Country deleted successfully.";
+                    return Ok(responseModel);
+                }
+                _logger.LogError($"Country '{countryName}' not found.");
+                responseModel.Success = false;
+                responseModel.Message = "Country is not present.";
+                return NotFound(responseModel);
             }
 
-            _logger.LogError($"Country '{countryName}' not found.");
-            responseModel.Success = false;
-            responseModel.Message = "Country is not present.";
-            return NotFound(responseModel);
+            catch (Exception ex)
+            {
+                _logger.LogError("Error occurred " + ex);
+                return NotFound(responseModel);
+
+            }
+
+            
         }
 
         /// <summary>
@@ -149,6 +169,17 @@ namespace HelloGreetingApplication.Controllers
             }
 
             return Ok(new { Message = "Population updated successfully!", Data = new { key, value } });
+        }
+        /// <summary>
+        /// Greeting app greet using Services layer
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("helloGreet")]
+        public IActionResult GetGreeting()
+        {
+            _logger.LogInformation("Greeting by services.");
+            return Ok(_GreetingBL.GetGreeting());
         }
     }
 }
