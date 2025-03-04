@@ -127,22 +127,34 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// Update population using PUT (full update).
+        /// Update the Greeting message
         /// </summary>
-        [HttpPut("{key}/{value}")]
-        public IActionResult Put(string key, long value)
+        [HttpPut]
+        public IActionResult Put(UpdateGreetingModel updateGreetingModel)
         {
-            _logger.LogInformation($"Executing PUT to update {key} with population {value}");
+            _logger.LogInformation("Update the data base.");
 
-            bool isUpdated = _countryDictionary.UpdatePopulation(key, value);
+            ResponseModel<string> responseModel = new ResponseModel<string>();
 
-            if (!isUpdated)
+            try
             {
-                _logger.LogError($"Country '{key}' not found.");
-                return NotFound(new { Message = "Country not found!" });
+                var result = _GreetingBL.UpdateGreeting(updateGreetingModel);
+                responseModel.Success = true;
+                responseModel.Message = "Update successfull";
+                responseModel.Data = result;
+
+                return Ok(responseModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical(ex.ToString());
+                responseModel.Success = false;
+                responseModel.Message = "Some error occurred.";
+                responseModel.Data = ex.ToString();
+
+                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
             }
 
-            return Ok(new { Message = "Population updated successfully!" });
         }
 
         /// <summary>
@@ -276,6 +288,10 @@ namespace HelloGreetingApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Show all greetings
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [Route("ListOfGreeting")]
 

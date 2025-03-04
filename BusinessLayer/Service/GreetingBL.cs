@@ -86,5 +86,18 @@ namespace BusinessLayer.Service
             }
              
         }
+
+        public string UpdateGreeting(UpdateGreetingModel updateGreetingModel)
+        {
+            try
+            {
+                var result = _greetingRL.UpdateGreeting(updateGreetingModel);
+                return result;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
     }
 }
