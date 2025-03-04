@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using RepositoryLayer.Interface;
 using BusinessLayer.Interface;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
 
 namespace BusinessLayer.Service
 {
@@ -52,6 +53,24 @@ namespace BusinessLayer.Service
         {
                 var result = _greetingRL.SavedGreeting(greetingModel);
                 return result; 
+        }
+
+        public GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            try
+            {
+                var result = _greetingRL.CheckGreeting(checkGreetingModel);
+
+                return result;
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw;
+            }
+            catch
+            {
+                throw new Exception();
+            }
         }
     }
 }
