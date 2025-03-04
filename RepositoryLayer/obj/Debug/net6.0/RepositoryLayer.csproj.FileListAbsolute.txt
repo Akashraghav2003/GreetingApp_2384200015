@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+=======
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\ModelLayer.dll
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\bin\Debug\net6.0\ModelLayer.pdb
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.dll
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\refint\RepositoryLayer.dll
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.pdb
+D:\akash gla university\newApp\HelloGreetingApplication\RepositoryLayer\obj\Debug\net6.0\ref\RepositoryLayer.dll
+>>>>>>> UC2
 D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.deps.json
 D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.dll
 D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.pdb

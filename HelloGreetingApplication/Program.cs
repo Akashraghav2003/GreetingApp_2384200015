@@ -2,7 +2,10 @@ using Microsoft.OpenApi.Models;
 using ModelLayer.Model;
 using NLog;
 using NLog.Web;
-
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 try
@@ -13,6 +16,9 @@ try
 
 
     builder.Services.AddControllers();
+
+    builder.Services.AddScoped<IGreetingBL, GreetingBL>();
+    builder.Services.AddScoped<IGreetingRL, GreetingRL>();
     builder.Services.AddSingleton<DictionaryForMethod>();
 
 
@@ -30,8 +36,11 @@ try
                 Email = "akash.si8273@gmail.com",
 
             }
+           
         });
+       
     });
+   
     builder.Logging.ClearProviders();
     builder.Host.UseNLog();
 
