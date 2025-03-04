@@ -397,3 +397,60 @@
 2025-03-04 11:25:36.1770 | INFO | The file /favicon-32x32.png was not modified 
 2025-03-04 11:25:36.2522 | INFO | Response: 304 
 2025-03-04 11:25:36.2767 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/favicon-32x32.png - - - 304 - image/png 239.4581ms 
+2025-03-04 14:30:59.9088 | INFO | Now listening on: https://localhost:7223 
+2025-03-04 14:31:00.0046 | INFO | Now listening on: http://localhost:5213 
+2025-03-04 14:31:00.1698 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-04 14:31:00.2064 | INFO | Hosting environment: Development 
+2025-03-04 14:31:00.2235 | INFO | Content root path: D:\akash gla university\CG_HelloAPP\GreetingApp_2384200015\HelloGreetingApplication\ 
+2025-03-04 14:31:01.8140 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.html - - 
+2025-03-04 14:31:02.2994 | INFO | Request: GET /Swagger/index.html 
+2025-03-04 14:31:02.6221 | INFO | Response: 200 
+2025-03-04 14:31:02.6394 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.html - - - 200 - text/html;charset=utf-8 830.0126ms 
+2025-03-04 14:31:02.6394 | INFO | Request starting HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-04 14:31:02.6715 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/index.js - - 
+2025-03-04 14:31:02.6715 | INFO | Request starting HTTP/2 GET https://localhost:7223/_vs/browserLink - - 
+2025-03-04 14:31:02.6715 | INFO | Request finished HTTP/2 GET https://localhost:7223/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 22.3313ms 
+2025-03-04 14:31:02.6715 | INFO | Request: GET /Swagger/index.js 
+2025-03-04 14:31:02.6940 | INFO | Response: 200 
+2025-03-04 14:31:02.7052 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 33.5991ms 
+2025-03-04 14:31:02.8983 | INFO | Request finished HTTP/2 GET https://localhost:7223/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 226.0654ms 
+2025-03-04 14:31:03.5619 | INFO | Request starting HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - 
+2025-03-04 14:31:03.5619 | INFO | Request: GET /Swagger/v1/swagger.json 
+2025-03-04 14:31:03.6021 | INFO | Response: 200 
+2025-03-04 14:31:03.6215 | INFO | Request finished HTTP/2 GET https://localhost:7223/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.5844ms 
+2025-03-04 14:31:51.8079 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 49 
+2025-03-04 14:31:51.9641 | INFO | Request: POST /HelloGreeting/GreetingMessage 
+2025-03-04 14:31:51.9833 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:31:52.0707 | INFO | Route matched with {action = "Greetingmessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Greetingmessage(ModelLayer.Model.ResponseClass) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 14:31:52.4042 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 14:31:52.4541 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication) in 256.4795ms 
+2025-03-04 14:31:52.4541 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:31:52.4541 | INFO | Response: 200 
+2025-03-04 14:31:52.4541 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 49 - 200 - application/json;+charset=utf-8 650.5690ms 
+2025-03-04 14:32:52.6441 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 30 
+2025-03-04 14:32:52.6601 | INFO | Request: POST /HelloGreeting/GreetingMessage 
+2025-03-04 14:32:52.6601 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:32:52.6601 | INFO | Route matched with {action = "Greetingmessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Greetingmessage(ModelLayer.Model.ResponseClass) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 14:32:52.6819 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-04 14:32:52.6819 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication) in 21.1531ms 
+2025-03-04 14:32:52.6819 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:32:52.6855 | INFO | Response: 400 
+2025-03-04 14:32:52.6855 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 30 - 400 - application/problem+json;+charset=utf-8 44.7156ms 
+2025-03-04 14:33:06.4821 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 28 
+2025-03-04 14:33:06.4821 | INFO | Request: POST /HelloGreeting/GreetingMessage 
+2025-03-04 14:33:06.4821 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:33:06.4821 | INFO | Route matched with {action = "Greetingmessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Greetingmessage(ModelLayer.Model.ResponseClass) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 14:33:06.4880 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 14:33:06.4880 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication) in 5.683ms 
+2025-03-04 14:33:06.4880 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:33:06.4880 | INFO | Response: 200 
+2025-03-04 14:33:06.4880 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 28 - 200 - application/json;+charset=utf-8 7.6813ms 
+2025-03-04 14:33:14.3685 | INFO | Request starting HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 8 
+2025-03-04 14:33:14.3845 | INFO | Request: POST /HelloGreeting/GreetingMessage 
+2025-03-04 14:33:14.3845 | INFO | Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:33:14.3845 | INFO | Route matched with {action = "Greetingmessage", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Greetingmessage(ModelLayer.Model.ResponseClass) on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-04 14:33:14.3845 | INFO | Executing OkObjectResult, writing value of type 'ModelLayer.Model.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-04 14:33:14.3845 | INFO | Executed action HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication) in 0.8649ms 
+2025-03-04 14:33:14.3845 | INFO | Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.Greetingmessage (HelloGreetingApplication)' 
+2025-03-04 14:33:14.3845 | INFO | Response: 200 
+2025-03-04 14:33:14.3845 | INFO | Request finished HTTP/2 POST https://localhost:7223/HelloGreeting/GreetingMessage application/json 8 - 200 - application/json;+charset=utf-8 18.9031ms 

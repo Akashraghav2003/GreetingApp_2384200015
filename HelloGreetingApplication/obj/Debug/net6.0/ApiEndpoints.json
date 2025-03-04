@@ -80,6 +80,22 @@
   },
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
+    "Method": "Greetingmessage",
+    "RelativePath": "HelloGreeting/GreetingMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "responseClass",
+        "Type": "ModelLayer.Model.ResponseClass",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
     "Method": "GetGreeting",
     "RelativePath": "HelloGreeting/helloGreet",
     "HttpMethod": "GET",

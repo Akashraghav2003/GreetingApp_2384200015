@@ -181,5 +181,33 @@ namespace HelloGreetingApplication.Controllers
             _logger.LogInformation("Greeting by services.");
             return Ok(_GreetingBL.GetGreeting());
         }
+
+        [HttpPost]
+        [Route("GreetingMessage")]
+
+        public IActionResult Greetingmessage(ResponseClass responseClass)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            try
+            {
+                if (responseClass == null)
+                {
+                    _logger.LogWarning("Data not found ");
+                    return NoContent();
+                }
+
+                var result = _GreetingBL.GreetMessage(responseClass.firstName, responseClass.lastName);
+
+                responseModel.Success = true;
+                responseModel.Message = "Greet Message";
+                responseModel.Data = result;
+                return Ok(responseModel);
+
+            }catch(Exception ex)
+            {
+                _logger.LogError("error occured" + ex);
+                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+            }
+        }
     }
 }
