@@ -102,59 +102,37 @@ namespace HelloGreetingApplication.Controllers
         {
             _logger.LogInformation($"Executing DELETE for country: {countryName}");
             ResponseModel<string> responseModel = new ResponseModel<string>();
-            try
+
+            if (_countryDictionary.DeleteCountry(countryName))
             {
-                if (_countryDictionary.DeleteCountry(countryName))
-                {
-                    responseModel.Success = true;
-                    responseModel.Message = "Country deleted successfully.";
-                    return Ok(responseModel);
-                }
-                _logger.LogError($"Country '{countryName}' not found.");
-                responseModel.Success = false;
-                responseModel.Message = "Country is not present.";
-                return NotFound(responseModel);
+                responseModel.Success = true;
+                responseModel.Message = "Country deleted successfully.";
+                return Ok(responseModel);
             }
 
-            catch (Exception ex)
-            {
-                _logger.LogError("Error occurred " + ex);
-                return NotFound(responseModel);
-
-            }
-
-            
+            _logger.LogError($"Country '{countryName}' not found.");
+            responseModel.Success = false;
+            responseModel.Message = "Country is not present.";
+            return NotFound(responseModel);
         }
 
         /// <summary>
-        /// Update the Greeting message
+        /// Update population using PUT (full update).
         /// </summary>
-        [HttpPut]
-        public IActionResult Put(UpdateGreetingModel updateGreetingModel)
+        [HttpPut("{key}/{value}")]
+        public IActionResult Put(string key, long value)
         {
-            _logger.LogInformation("Update the data base.");
+            _logger.LogInformation($"Executing PUT to update {key} with population {value}");
 
-            ResponseModel<string> responseModel = new ResponseModel<string>();
+            bool isUpdated = _countryDictionary.UpdatePopulation(key, value);
 
-            try
+            if (!isUpdated)
             {
-                var result = _GreetingBL.UpdateGreeting(updateGreetingModel);
-                responseModel.Success = true;
-                responseModel.Message = "Update successfull";
-                responseModel.Data = result;
-
-                return Ok(responseModel);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogCritical(ex.ToString());
-                responseModel.Success = false;
-                responseModel.Message = "Some error occurred.";
-                responseModel.Data = ex.ToString();
-
-                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+                _logger.LogError($"Country '{key}' not found.");
+                return NotFound(new { Message = "Country not found!" });
             }
 
+            return Ok(new { Message = "Population updated successfully!" });
         }
 
         /// <summary>
@@ -183,10 +161,12 @@ namespace HelloGreetingApplication.Controllers
 
             return Ok(new { Message = "Population updated successfully!", Data = new { key, value } });
         }
+        
+        
         /// <summary>
-        /// Greeting app greet using Services layer
-        /// </summary>
-        /// <returns></returns>
+         /// Greeting app greet using Services layer
+         /// </summary>
+         /// <returns></returns>
         [HttpGet]
         [Route("helloGreet")]
         public IActionResult GetGreeting()

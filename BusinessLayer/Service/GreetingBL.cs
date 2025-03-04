@@ -87,7 +87,7 @@ namespace BusinessLayer.Service
              
         }
 
-        public string UpdateGreeting(UpdateGreetingModel updateGreetingModel)
+        public string UpdateGreeting(GreetingIdModel updateGreetingModel)
         {
             try
             {
@@ -99,5 +99,7 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
+
+        
     }
 }

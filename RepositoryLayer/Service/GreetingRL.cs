@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 
 namespace RepositoryLayer.Service
@@ -47,6 +48,9 @@ namespace RepositoryLayer.Service
                 throw new Exception();
             }
         }
+
+        
+        
 
         public string GetGreeting()
         {
@@ -104,7 +108,7 @@ namespace RepositoryLayer.Service
             }
         }
 
-        public string UpdateGreeting(UpdateGreetingModel updateGreetingModel)
+        public string UpdateGreeting(GreetingIdModel updateGreetingModel)
         {
             if (updateGreetingModel == null || string.IsNullOrWhiteSpace(updateGreetingModel.greetingMessage))
             {

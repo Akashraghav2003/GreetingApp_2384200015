@@ -17,6 +17,7 @@ namespace BusinessLayer.Interface
         GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel);
         List<GreetingEntity> ListGreetingMessage();
 
-        string UpdateGreeting(UpdateGreetingModel updateGreetingModel);
+        string UpdateGreeting(GreetingIdModel updateGreetingModel);
+        
     }
 }

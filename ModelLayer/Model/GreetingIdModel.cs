@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ModelLayer.Model
 {
-    public class UpdateGreetingModel
+    public class GreetingIdModel
     {
         public int id { get; set; }
         public string? greetingMessage { get; set; }
