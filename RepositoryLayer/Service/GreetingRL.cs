@@ -19,6 +19,35 @@ namespace RepositoryLayer.Service
         {
             _dbContext = dbContext;
         }
+
+        public GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            if (checkGreetingModel == null)
+            {
+                throw new ArgumentException("Invalid Greeting Message");
+            }
+
+            try
+            {
+                var result = _dbContext.GreetingEntities.FirstOrDefault<GreetingEntity>(e => e.id == checkGreetingModel.id);
+
+                if (result == null)
+                {
+                    throw new KeyNotFoundException($"Greeting with Id {checkGreetingModel.id} not found.");
+                }
+
+                return result;
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
+
         public string GetGreeting()
         {
             return "HelloWorld";

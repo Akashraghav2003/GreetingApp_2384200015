@@ -239,6 +239,36 @@ namespace HelloGreetingApplication.Controllers
 
                 return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
             }
+
+            
+        }
+
+
+        [HttpPost]
+        [Route("CheckGreeting")]
+
+        public IActionResult CheckGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+
+            try
+            {
+                var result = _GreetingBL.CheckGreeting(checkGreetingModel);
+                responseModel.Success = true;
+                responseModel.Message = "Operation held.";
+                responseModel.Data = $"Id : {result.id}, GreetingMessage {result.greetingMessage}";
+
+                return Ok(responseModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical(ex.ToString());
+                responseModel.Success = false;
+                responseModel.Message = "Some error occurred.";
+                responseModel.Data = ex.ToString();
+
+                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+            }
         }
     }
 }
