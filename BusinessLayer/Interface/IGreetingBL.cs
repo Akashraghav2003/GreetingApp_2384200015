@@ -18,5 +18,6 @@ namespace BusinessLayer.Interface
         List<GreetingEntity> ListGreetingMessage();
 
         string UpdateGreeting(UpdateGreetingModel updateGreetingModel);
+        string DeleteGreeting(CheckGreetingModel checkGreetingModel);
     }
 }

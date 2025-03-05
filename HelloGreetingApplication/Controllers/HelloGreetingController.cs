@@ -94,37 +94,7 @@ namespace HelloGreetingApplication.Controllers
             
         }
 
-        /// <summary>
-        /// Delete a country.
-        /// </summary>
-        [HttpDelete("{countryName}")]
-        public IActionResult Delete(string countryName)
-        {
-            _logger.LogInformation($"Executing DELETE for country: {countryName}");
-            ResponseModel<string> responseModel = new ResponseModel<string>();
-            try
-            {
-                if (_countryDictionary.DeleteCountry(countryName))
-                {
-                    responseModel.Success = true;
-                    responseModel.Message = "Country deleted successfully.";
-                    return Ok(responseModel);
-                }
-                _logger.LogError($"Country '{countryName}' not found.");
-                responseModel.Success = false;
-                responseModel.Message = "Country is not present.";
-                return NotFound(responseModel);
-            }
-
-            catch (Exception ex)
-            {
-                _logger.LogError("Error occurred " + ex);
-                return NotFound(responseModel);
-
-            }
-
-            
-        }
+        
 
         /// <summary>
         /// Update the Greeting message
@@ -321,7 +291,38 @@ namespace HelloGreetingApplication.Controllers
                 _logger.LogError("Some Error Occurred" + ex);
                 return StatusCode(500, new { Error = "An error occurred.", Details = ex.Message });
             }
+        }
 
+        /// <summary>
+        /// Delete the Greeting.
+        /// </summary>
+        [HttpDelete]
+        public IActionResult Delete(CheckGreetingModel checkGreetingModel)
+        {
+            _logger.LogInformation("Delete the Greeting");
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            try
+            {
+                var result = _GreetingBL.DeleteGreeting(checkGreetingModel);
+
+                responseModel.Success = true;
+                responseModel.Message = result;
+                return Ok(responseModel);
+
+            }
+            catch (KeyNotFoundException ex)
+            {
+                responseModel.Success = false;
+                responseModel.Message = ex.Message;
+                return NotFound(responseModel);
+            }
+
+            catch (Exception ex)
+            {
+                _logger.LogError("Error occurred " + ex);
+                return NotFound(responseModel);
+
+            }
 
 
         }

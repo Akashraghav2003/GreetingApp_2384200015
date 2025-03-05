@@ -103,5 +103,21 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
+        public string DeleteGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            try
+            {
+                var result = _greetingRL.DeleteGreeting(checkGreetingModel);
+                return result;
+            }
+            catch(KeyNotFoundException ex)
+            {
+                throw;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
     }
 }

@@ -134,5 +134,35 @@ namespace RepositoryLayer.Service
                 throw new Exception();
             }
         }
+        public string DeleteGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            if (checkGreetingModel == null)
+            {
+                throw new ArgumentException("Invalid Greeting Message");
+            }
+
+            try
+            {
+                var result = _dbContext.GreetingEntities.FirstOrDefault<GreetingEntity>(e => e.id == checkGreetingModel.id);
+
+                if (result == null)
+                {
+                    throw new KeyNotFoundException($"Greeting with ID {checkGreetingModel.id} not found.");
+                }
+
+                _dbContext.GreetingEntities.Remove(result);
+                _dbContext.SaveChanges();
+
+                return "Greeting Delete successfull.";
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
     }
 }
