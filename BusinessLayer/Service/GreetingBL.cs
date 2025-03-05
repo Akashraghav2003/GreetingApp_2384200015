@@ -103,7 +103,26 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
+<<<<<<< HEAD
 
         
+=======
+        public string DeleteGreeting(CheckGreetingModel checkGreetingModel)
+        {
+            try
+            {
+                var result = _greetingRL.DeleteGreeting(checkGreetingModel);
+                return result;
+            }
+            catch(KeyNotFoundException ex)
+            {
+                throw;
+            }
+            catch
+            {
+                throw new Exception();
+            }
+        }
+>>>>>>> UC8
     }
 }

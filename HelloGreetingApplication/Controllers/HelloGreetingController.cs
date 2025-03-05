@@ -94,6 +94,7 @@ namespace HelloGreetingApplication.Controllers
             
         }
 
+<<<<<<< HEAD
         /// <summary>
         /// Delete a country.
         /// </summary>
@@ -115,6 +116,9 @@ namespace HelloGreetingApplication.Controllers
             responseModel.Message = "Country is not present.";
             return NotFound(responseModel);
         }
+=======
+        
+>>>>>>> UC8
 
         /// <summary>
         /// Update population using PUT (full update).
@@ -319,7 +323,38 @@ namespace HelloGreetingApplication.Controllers
                 _logger.LogError("Some Error Occurred" + ex);
                 return StatusCode(500, new { Error = "An error occurred.", Details = ex.Message });
             }
+        }
 
+        /// <summary>
+        /// Delete the Greeting.
+        /// </summary>
+        [HttpDelete]
+        public IActionResult Delete(CheckGreetingModel checkGreetingModel)
+        {
+            _logger.LogInformation("Delete the Greeting");
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            try
+            {
+                var result = _GreetingBL.DeleteGreeting(checkGreetingModel);
+
+                responseModel.Success = true;
+                responseModel.Message = result;
+                return Ok(responseModel);
+
+            }
+            catch (KeyNotFoundException ex)
+            {
+                responseModel.Success = false;
+                responseModel.Message = ex.Message;
+                return NotFound(responseModel);
+            }
+
+            catch (Exception ex)
+            {
+                _logger.LogError("Error occurred " + ex);
+                return NotFound(responseModel);
+
+            }
 
 
         }

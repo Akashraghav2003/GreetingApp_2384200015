@@ -19,8 +19,14 @@ namespace RepositoryLayer.Interface
 
         List<GreetingEntity> ListGreetingMessage();
 
+<<<<<<< HEAD
         string UpdateGreeting(GreetingIdModel updateGreetingModel);
 
         
+=======
+        string UpdateGreeting(UpdateGreetingModel updateGreetingModel);
+        string DeleteGreeting(CheckGreetingModel checkGreetingModel);
+
+>>>>>>> UC8
     }
 }
