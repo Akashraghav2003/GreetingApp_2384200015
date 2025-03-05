@@ -139,11 +139,16 @@ namespace HelloGreetingApplication.Controllers
             try
             {
                 var result = _GreetingBL.UpdateGreeting(updateGreetingModel);
+                
                 responseModel.Success = true;
                 responseModel.Message = "Update successfull";
                 responseModel.Data = result;
 
                 return Ok(responseModel);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
             }
             catch (Exception ex)
             {

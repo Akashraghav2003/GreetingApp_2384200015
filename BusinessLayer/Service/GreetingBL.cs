@@ -94,6 +94,10 @@ namespace BusinessLayer.Service
                 var result = _greetingRL.UpdateGreeting(updateGreetingModel);
                 return result;
             }
+            catch(KeyNotFoundException ex)
+            {
+                throw;
+            }
             catch
             {
                 throw new Exception();
