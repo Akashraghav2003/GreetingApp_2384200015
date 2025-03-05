@@ -128,8 +128,31 @@ namespace HelloGreetingApplication.Controllers
 
             if (!isUpdated)
             {
+<<<<<<< HEAD
                 _logger.LogError($"Country '{key}' not found.");
                 return NotFound(new { Message = "Country not found!" });
+=======
+                var result = _GreetingBL.UpdateGreeting(updateGreetingModel);
+                
+                responseModel.Success = true;
+                responseModel.Message = "Update successfull";
+                responseModel.Data = result;
+
+                return Ok(responseModel);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical(ex.ToString());
+                responseModel.Success = false;
+                responseModel.Message = "Some error occurred.";
+                responseModel.Data = ex.ToString();
+
+                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+>>>>>>> UC7
             }
 
             return Ok(new { Message = "Population updated successfully!" });

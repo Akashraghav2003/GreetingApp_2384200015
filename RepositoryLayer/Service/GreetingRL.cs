@@ -130,7 +130,7 @@ namespace RepositoryLayer.Service
             }
             catch(KeyNotFoundException ex)
             {
-                return "KeyNotFoundException"; 
+                throw; 
                 
             }
             catch(Exception ex)
