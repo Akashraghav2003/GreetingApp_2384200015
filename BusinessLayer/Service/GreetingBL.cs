@@ -103,10 +103,7 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
-<<<<<<< HEAD
 
-        
-=======
         public string DeleteGreeting(CheckGreetingModel checkGreetingModel)
         {
             try
@@ -123,6 +120,6 @@ namespace BusinessLayer.Service
                 throw new Exception();
             }
         }
->>>>>>> UC8
+
     }
 }

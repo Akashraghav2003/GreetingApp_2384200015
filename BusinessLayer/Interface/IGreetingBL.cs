@@ -17,12 +17,11 @@ namespace BusinessLayer.Interface
         GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel);
         List<GreetingEntity> ListGreetingMessage();
 
-<<<<<<< HEAD
+
         string UpdateGreeting(GreetingIdModel updateGreetingModel);
         
-=======
-        string UpdateGreeting(UpdateGreetingModel updateGreetingModel);
+
         string DeleteGreeting(CheckGreetingModel checkGreetingModel);
->>>>>>> UC8
+
     }
 }

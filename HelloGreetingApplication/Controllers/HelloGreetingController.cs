@@ -94,50 +94,21 @@ namespace HelloGreetingApplication.Controllers
             
         }
 
-<<<<<<< HEAD
+
         /// <summary>
-        /// Delete a country.
+        /// Update the Greeting message
         /// </summary>
-        [HttpDelete("{countryName}")]
-        public IActionResult Delete(string countryName)
+        [HttpPut("Update_Greeting")]
+        public IActionResult Put(GreetingIdModel geetingModel)
         {
-            _logger.LogInformation($"Executing DELETE for country: {countryName}");
+            _logger.LogInformation("Update the data base.");
+
             ResponseModel<string> responseModel = new ResponseModel<string>();
 
-            if (_countryDictionary.DeleteCountry(countryName))
+            try
             {
-                responseModel.Success = true;
-                responseModel.Message = "Country deleted successfully.";
-                return Ok(responseModel);
-            }
+                var result = _GreetingBL.UpdateGreeting(geetingModel);
 
-            _logger.LogError($"Country '{countryName}' not found.");
-            responseModel.Success = false;
-            responseModel.Message = "Country is not present.";
-            return NotFound(responseModel);
-        }
-=======
-        
->>>>>>> UC8
-
-        /// <summary>
-        /// Update population using PUT (full update).
-        /// </summary>
-        [HttpPut("{key}/{value}")]
-        public IActionResult Put(string key, long value)
-        {
-            _logger.LogInformation($"Executing PUT to update {key} with population {value}");
-
-            bool isUpdated = _countryDictionary.UpdatePopulation(key, value);
-
-            if (!isUpdated)
-            {
-<<<<<<< HEAD
-                _logger.LogError($"Country '{key}' not found.");
-                return NotFound(new { Message = "Country not found!" });
-=======
-                var result = _GreetingBL.UpdateGreeting(updateGreetingModel);
-                
                 responseModel.Success = true;
                 responseModel.Message = "Update successfull";
                 responseModel.Data = result;
@@ -156,11 +127,10 @@ namespace HelloGreetingApplication.Controllers
                 responseModel.Data = ex.ToString();
 
                 return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
->>>>>>> UC7
             }
 
-            return Ok(new { Message = "Population updated successfully!" });
         }
+
 
         /// <summary>
         /// Update population using PATCH (partial update).
@@ -328,7 +298,7 @@ namespace HelloGreetingApplication.Controllers
         /// <summary>
         /// Delete the Greeting.
         /// </summary>
-        [HttpDelete]
+        [HttpDelete("Delete_Greeting")]
         public IActionResult Delete(CheckGreetingModel checkGreetingModel)
         {
             _logger.LogInformation("Delete the Greeting");
