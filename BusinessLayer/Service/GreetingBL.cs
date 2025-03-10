@@ -7,6 +7,7 @@ using RepositoryLayer.Interface;
 using BusinessLayer.Interface;
 using ModelLayer.Model;
 using RepositoryLayer.Entity;
+using Microsoft.Extensions.Logging;
 
 namespace BusinessLayer.Service
 {
@@ -14,10 +15,12 @@ namespace BusinessLayer.Service
     {
 
         private readonly IGreetingRL _greetingRL;
+        private readonly ILogger<GreetingBL> _logger;
 
-        public GreetingBL(IGreetingRL greetingRL)
+        public GreetingBL(IGreetingRL greetingRL, ILogger<GreetingBL> logger)
         {
             _greetingRL = greetingRL;
+            _logger = logger;
         }
 
         public string GreetMessage(string firstName, string lastName)
@@ -38,9 +41,11 @@ namespace BusinessLayer.Service
                 }
                 return $"Hello, {firstName} {lastName}";
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Greeting already presents.");
+
+                throw ;
             }
         }
 
@@ -51,8 +56,16 @@ namespace BusinessLayer.Service
 
         public string SavedGreeting(GreetingModel greetingModel)
         {
+            try
+            {
                 var result = _greetingRL.SavedGreeting(greetingModel);
-                return result; 
+                return result;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Greeting already presents.");
+                throw;
+            }
         }
 
         public GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel)
@@ -65,11 +78,13 @@ namespace BusinessLayer.Service
             }
             catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
                 throw;
             }
-            catch
+            catch (ArgumentException ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Greeting is not found");
+                throw;
             }
         }
 
@@ -94,13 +109,16 @@ namespace BusinessLayer.Service
                 var result = _greetingRL.UpdateGreeting(updateGreetingModel);
                 return result;
             }
-            catch(KeyNotFoundException ex)
+            catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
                 throw;
+
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Invalid Greeting Message");
+                throw;
             }
         }
 
@@ -111,13 +129,15 @@ namespace BusinessLayer.Service
                 var result = _greetingRL.DeleteGreeting(checkGreetingModel);
                 return result;
             }
-            catch(KeyNotFoundException ex)
+            catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
                 throw;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Invalid Greeting Message");
+                throw;
             }
         }
 
