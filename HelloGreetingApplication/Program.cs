@@ -35,6 +35,9 @@ try
     builder.Services.AddScoped<IGreetingRL, GreetingRL>();
     builder.Services.AddScoped<GreetingContext>();
 
+    builder.Services.AddScoped<IUserBL, UserBL>();
+    builder.Services.AddScoped<IUserRL, UserRL>();
+
     builder.Services.AddSingleton<DictionaryForMethod>();
 
 
