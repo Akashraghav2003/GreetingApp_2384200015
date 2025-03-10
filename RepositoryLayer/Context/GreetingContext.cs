@@ -13,6 +13,8 @@ namespace RepositoryLayer.Context
         public GreetingContext(DbContextOptions<GreetingContext> options) : base(options) { }
 
         public virtual DbSet<GreetingEntity> GreetingEntities { get; set; }
+
+        public virtual DbSet<UserEntity> UserEntities { get; set; }
         
     }
 }
