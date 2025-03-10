@@ -1,13 +1,16 @@
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ModelLayer.Model;
 using NLog;
 using NLog.Web;
-using BusinessLayer.Interface;
-using BusinessLayer.Service;
+using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
-using RepositoryLayer.Context;
-using Microsoft.EntityFrameworkCore;
+using System.Reflection;
+
+
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("nlog.config").GetCurrentClassLogger();
 try
@@ -17,7 +20,12 @@ try
     // Add services to the container.
 
 
-    builder.Services.AddControllers();
+    builder.Services.AddControllers(options =>
+    {
+        options.Filters.Add<Middleware.GlobalException.GlobalExceptionFilter>(); // Register Global Exception Filter
+    })
+.AddNewtonsoftJson(); // Use Newtonsoft.Json for serialization
+    
 
     var connectionString = builder.Configuration.GetConnectionString("sqlConnection");
     builder.Services.AddDbContext<GreetingContext>(option => option.UseSqlServer(connectionString));
@@ -46,7 +54,10 @@ try
             }
            
         });
-       
+        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+        options.IncludeXmlComments(xmlPath);
+
     });
    
     builder.Logging.ClearProviders();

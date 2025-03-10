@@ -3,6 +3,7 @@ using ModelLayer.Model;
 using NLog.Web;
 using BusinessLayer.Interface;
 using RepositoryLayer.Entity;
+using Middleware.GlobalException;
 namespace HelloGreetingApplication.Controllers
 {
     /// <summary>
@@ -43,7 +44,8 @@ namespace HelloGreetingApplication.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Error in GET method: {ex}");
-                return StatusCode(500, new { Message = "Internal server error", Error = ex.Message });
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
         }
 
@@ -85,10 +87,17 @@ namespace HelloGreetingApplication.Controllers
                 responseModel.Message = "New country added successfully.";
                 return Created("", responseModel);
             }
-            catch (Exception ex)
+            catch(KeyNotFoundException ex)
             {
                 _logger.LogError("Country is already present " + ex);
-                return Conflict(responseModel);
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogCritical(ex.ToString());
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
 
             
@@ -118,16 +127,15 @@ namespace HelloGreetingApplication.Controllers
             }
             catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
                 return NotFound(new { message = ex.Message });
             }
             catch (Exception ex)
             {
                 _logger.LogCritical(ex.ToString());
-                responseModel.Success = false;
-                responseModel.Message = "Some error occurred.";
-                responseModel.Data = ex.ToString();
-
-                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
 
         }
@@ -170,6 +178,11 @@ namespace HelloGreetingApplication.Controllers
             return Ok(_GreetingBL.GetGreeting());
         }
 
+        /// <summary>
+        /// Greet User According To Name
+        /// </summary>
+        /// <param name="responseClass"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("GreetingMessage")]
 
@@ -194,7 +207,8 @@ namespace HelloGreetingApplication.Controllers
             }catch(Exception ex)
             {
                 _logger.LogError("error occured" + ex);
-                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
         }
 
@@ -221,11 +235,9 @@ namespace HelloGreetingApplication.Controllers
             catch(Exception ex)
             {
                 _logger.LogCritical(ex.ToString());
-                responseModel.Success = false;
-                responseModel.Message = "Some error occurred.";
-                responseModel.Data = ex.ToString();
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
 
-                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+                return StatusCode(500, errorResponse);
             }
 
             
@@ -252,14 +264,17 @@ namespace HelloGreetingApplication.Controllers
 
                 return Ok(responseModel);
             }
-            catch (Exception ex)
+            catch (KeyNotFoundException ex)
             {
-                _logger.LogCritical(ex.ToString());
-                responseModel.Success = false;
-                responseModel.Message = "Some error occurred.";
-                responseModel.Data = ex.ToString();
-
-                return StatusCode(500, new { error = "An error Occurred ", details = ex.Message });
+                _logger.LogError("Greeting not present.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
+            }
+            catch(ArgumentException ex)
+            {
+                _logger.LogError("Invalid greeting.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
         }
 
@@ -289,7 +304,8 @@ namespace HelloGreetingApplication.Controllers
             catch(Exception ex)
             {
                 _logger.LogError("Some Error Occurred" + ex);
-                return StatusCode(500, new { Error = "An error occurred.", Details = ex.Message });
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return StatusCode(500, errorResponse);
             }
         }
 
@@ -312,15 +328,16 @@ namespace HelloGreetingApplication.Controllers
             }
             catch (KeyNotFoundException ex)
             {
-                responseModel.Success = false;
-                responseModel.Message = ex.Message;
-                return NotFound(responseModel);
+                _logger.LogError("Greeting does not present");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return NotFound(errorResponse);
             }
 
             catch (Exception ex)
             {
                 _logger.LogError("Error occurred " + ex);
-                return NotFound(responseModel);
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return NotFound(errorResponse);
 
             }
 

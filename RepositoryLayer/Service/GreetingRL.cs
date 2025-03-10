@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 
 namespace RepositoryLayer.Service
@@ -14,10 +15,12 @@ namespace RepositoryLayer.Service
     public class GreetingRL : IGreetingRL
     {
         private readonly GreetingContext _dbContext;
+        private readonly ILogger<GreetingRL> _logger;
 
-        public GreetingRL(GreetingContext dbContext)
+        public GreetingRL(GreetingContext dbContext, ILogger<GreetingRL> logger)
         {
             _dbContext = dbContext;
+            _logger = logger;
         }
 
         public GreetingEntity CheckGreeting(CheckGreetingModel checkGreetingModel)
@@ -40,11 +43,13 @@ namespace RepositoryLayer.Service
             }
             catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
                 throw;
             }
-            catch
+            catch(ArgumentException ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Greeting is not found");
+                throw;
             }
         }
 
@@ -65,9 +70,10 @@ namespace RepositoryLayer.Service
 
                 return result;
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "There is not Greeting Present.");
+                throw;
             }
 
 
@@ -86,7 +92,7 @@ namespace RepositoryLayer.Service
 
                 if (result != null)
                 {
-                    return "Greeting is already exits.";
+                    throw new Exception("Greeting already presents.");
                 }
 
                 var newGreeting = new GreetingEntity
@@ -98,9 +104,10 @@ namespace RepositoryLayer.Service
 
                 return "New message added to database.";
             }
-            catch 
+            catch (Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Greeting already presents.");
+                throw;
             }
         }
 
@@ -126,12 +133,14 @@ namespace RepositoryLayer.Service
             }
             catch(KeyNotFoundException ex)
             {
-                throw; 
-                
+                _logger.LogError(ex, "Greeting is not found");
+                throw;
+
             }
             catch(Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Invalid Greeting Message");
+                throw;
             }
         }
         public string DeleteGreeting(CheckGreetingModel checkGreetingModel)
@@ -157,11 +166,13 @@ namespace RepositoryLayer.Service
             }
             catch (KeyNotFoundException ex)
             {
+                _logger.LogError(ex, "Greeting is not found");
                 throw;
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception();
+                _logger.LogError(ex, "Invalid Greeting Message");
+                throw;
             }
         }
     }
