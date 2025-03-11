@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using Middleware.GlobalException;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -27,6 +28,7 @@ namespace HelloGreetingApplication.Controllers
         /// <param name="userDTO"></param>
         /// <returns></returns>
         [HttpPost("User_Register")]
+        [Authorize]
 
         public IActionResult RegisterUser(UserDTO userDTO)
         {
@@ -61,7 +63,7 @@ namespace HelloGreetingApplication.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Login of the user.
         /// </summary>
         /// <param name="loginDTO"></param>
         /// <returns></returns>
@@ -75,22 +77,14 @@ namespace HelloGreetingApplication.Controllers
             {
                 var result = _userBL.LogIn(loginDTO);
 
-                if (result)
-                {
+              
                     responseModel.Success = true;
                     responseModel.Message = "Login Successfully.";
-                    responseModel.Data = $"{loginDTO.Email} log in successfully.";
+                    responseModel.Data = result;
 
                     return Ok(responseModel);
-                }
-                else
-                {
-                    responseModel.Success = false;
-                    responseModel.Message = "Not to be log in";
-                    responseModel.Data = "Check Email id and password";
-
-                    return Unauthorized(responseModel);
-                }
+            
+               
             }
             catch (KeyNotFoundException ex)
             {
@@ -115,13 +109,13 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost("ForgetPassword")]
         public IActionResult ForgetPassword()
         {
-
+            return Ok();
         }
 
         [HttpPost("ResetPassword")]
         public IActionResult ResetPassword()
         {
-
+            return Ok();
         }
     }
 }

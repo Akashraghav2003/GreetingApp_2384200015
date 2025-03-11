@@ -12,6 +12,6 @@ namespace BusinessLayer.Interface
     {
         bool RegisterUser(UserDTO userDTO);
 
-        bool LogIn(LoginDTO loginDTO);
+        string LogIn(LoginDTO loginDTO);
     }
 }

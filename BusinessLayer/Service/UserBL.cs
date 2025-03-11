@@ -14,14 +14,16 @@ namespace BusinessLayer.Service
     {
         private readonly IUserRL _userRL;
         private readonly ILogger<UserBL> _logger;
+        private readonly ITokenService _tokenService;
 
-        public UserBL(IUserRL userRL, ILogger<UserBL> logger)
+        public UserBL(IUserRL userRL, ILogger<UserBL> logger, ITokenService tokenService)
         {
             _userRL = userRL;
             _logger = logger;
+            _tokenService = tokenService;
         }
 
-        public bool LogIn(LoginDTO loginDTO)
+        public string LogIn(LoginDTO loginDTO)
         {
             if(loginDTO == null)
             {
@@ -31,17 +33,24 @@ namespace BusinessLayer.Service
             {
                 var result = _userRL.LogIn(loginDTO);
 
-                if (PasswordHashing.VerifyPassword(loginDTO.Password, result.Password)) return true;
-                else return false;
+                if (PasswordHashing.VerifyPassword(loginDTO.Password, result.Password)) 
+                {
+                    var token = _tokenService.GenerateToken(result);
+                    return token;
+                }
+                else
+                {
+                    throw new KeyNotFoundException("Give correct password.");
+                }
             }
             catch (KeyNotFoundException ex)
             {
-                _logger.LogError("Email is already present.");
+                _logger.LogError("Email is already present. "+ex);
                 throw;
             }
             catch (Exception ex)
             {
-                _logger.LogError("Some Unexpected error occurred.");
+                _logger.LogError("Some Unexpected error occurred. "+ex);
                 throw;
             }
         }
