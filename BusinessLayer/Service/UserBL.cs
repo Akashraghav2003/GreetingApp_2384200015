@@ -101,5 +101,27 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
+
+        public bool ResetPassword(string token, string Password)
+        {
+            try
+            {
+                var email = _tokenService.ValidateToken(token);
+                var newPassword = PasswordHashing.Hashing(Password);
+                var result = _userRL.ResetPassword(email, newPassword);
+
+                return true;
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogError("Invalid Email.");
+                throw;
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("Some Error Occurred.");
+                throw;
+            }
+        }
     }
 }

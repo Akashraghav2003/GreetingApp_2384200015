@@ -49,5 +49,38 @@ namespace BusinessLayer.Service
 
             return tokenHandler.WriteToken(token);
         }
+
+        public string ValidateToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
+
+            try
+            {
+                var claimsPrincipal = tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = _configuration["Jwt:Issuer"],
+                    ValidAudience = _configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateLifetime = true
+                }, out SecurityToken validatedToken);
+
+                var emailClaim = claimsPrincipal.FindFirst(ClaimTypes.Email);
+
+                // 🔹 Check if email is null and throw an exception
+                if (emailClaim == null)
+                    throw new NullReferenceException("Email claim not found in token.");
+
+                return emailClaim.Value;
+            }
+            catch (Exception ex)
+            {
+                // Optionally log the exception here
+                throw new Exception("Invalid or expired token.", ex);
+            }
+        }
     }
 }

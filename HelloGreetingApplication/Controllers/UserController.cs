@@ -1,9 +1,10 @@
 ﻿using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ModelLayer.Model;
 using Middleware.GlobalException;
-using Microsoft.AspNetCore.Authorization;
+using ModelLayer.Model;
 using RepositoryLayer.Interface;
 
 namespace HelloGreetingApplication.Controllers
@@ -148,10 +149,39 @@ namespace HelloGreetingApplication.Controllers
             }
         }
 
-        [HttpPost("ResetPassword")]
-        public IActionResult ResetPassword()
+        /// <summary>
+        /// Reset Password
+        /// </summary>
+        /// <param name="token"></param>
+        /// <param name="newPassword"></param>
+        /// <returns>Response body</returns>
+        [HttpPost("reset-password")]
+        public IActionResult ResetPassword( string token,  string newPassword)
         {
-            return Ok();
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            try
+            {
+                var result = _userBL.ResetPassword(token, newPassword);
+
+                responseModel.Success = true;
+                responseModel.Message = "Password Reset Successfully.";
+                responseModel.Data = "";
+
+                return Ok(responseModel);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                _logger.LogError("Give the correct Email.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return Unauthorized(errorResponse);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Some Error occurred.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return Unauthorized(errorResponse);
+            }
         }
+
     }
 }

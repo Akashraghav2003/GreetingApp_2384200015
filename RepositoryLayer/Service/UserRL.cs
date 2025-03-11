@@ -98,5 +98,33 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
+
+        public UserEntity ResetPassword(String Email, string Password)
+        {
+            try
+            {
+                var result = _dbContext.UserEntities.FirstOrDefault(e => e.Email == Email);
+                
+                if(result == null)
+                {
+                    throw new KeyNotFoundException("Email not found"); 
+                }
+
+                result.Password = Password;
+
+                _dbContext.SaveChanges();
+
+                return result;
+            }
+            catch(KeyNotFoundException ex)
+            {
+                _logger.LogError("Email not found." + ex);
+                throw;
+            }catch(Exception ex)
+            {
+                _logger.LogError("Some Error occurred." + ex);
+                throw;
+            }
+        }
     }
 }

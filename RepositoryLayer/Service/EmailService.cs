@@ -1,12 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using RepositoryLayer.Interface;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RepositoryLayer.Service
 {
@@ -21,23 +17,30 @@ namespace RepositoryLayer.Service
 
         public void SendEmail(string to, string subject, string body)
         {
-            using var client = new SmtpClient(_config["SMTP:Host"], int.Parse(_config["SMTP:Port"]))
+            try
             {
-                Credentials = new NetworkCredential(_config["SMTP:Username"], _config["SMTP:Password"]),
-                EnableSsl = true
-            };
+                using var client = new SmtpClient(_config["SMTP:Host"], int.Parse(_config["SMTP:Port"]))
+                {
+                    Credentials = new NetworkCredential(_config["SMTP:Username"], _config["SMTP:Password"]),
+                    EnableSsl = true
+                };
 
-            var mailMessage = new MailMessage
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(_config["SMTP:Username"]), 
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true
+                };
+
+                mailMessage.To.Add(new MailAddress(to));
+
+                client.Send(mailMessage); 
+            }
+            catch (Exception ex)
             {
-                From = new MailAddress(_config["SMTP:Username"]),
-                Subject = subject,
-                Body = body,
-                IsBodyHtml = true
-            };
-
-            mailMessage.To.Add(new MailAddress(to));
-            client.SendMailAsync(mailMessage);
+                throw new Exception($"Error sending email: {ex.Message}", ex);
+            }
         }
-
     }
 }

@@ -14,5 +14,7 @@ namespace RepositoryLayer.Interface
 
         UserEntity LogIn(LoginDTO loginDTO);
         UserEntity ForgetPassword(ForgetPasswordDTO forgetPasswordDTO);
+
+        UserEntity ResetPassword(String Email, string Password);
     }
 }

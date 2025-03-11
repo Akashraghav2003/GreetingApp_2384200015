@@ -10,5 +10,6 @@ namespace BusinessLayer.Interface
     public interface ITokenService
     {
         string GenerateToken(UserEntity userEntity);
+        string ValidateToken(string token);
     }
 }
