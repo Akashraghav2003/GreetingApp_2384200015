@@ -13,5 +13,7 @@ namespace BusinessLayer.Interface
         bool RegisterUser(UserDTO userDTO);
 
         string LogIn(LoginDTO loginDTO);
+
+        string ForgetPassword(ForgetPasswordDTO forgetPasswordDTO);
     }
 }

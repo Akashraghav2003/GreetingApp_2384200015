@@ -79,5 +79,24 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
+
+        public UserEntity ForgetPassword(ForgetPasswordDTO forgetPasswordDTO)
+        {
+            try
+            {
+                var userEntity = _dbContext.UserEntities.FirstOrDefault(e => e.Email == forgetPasswordDTO.Email);
+
+                if(userEntity == null)
+                {
+                    throw new KeyNotFoundException("Enter the correct Email.");
+                }
+
+                return userEntity;
+            }catch(KeyNotFoundException ex)
+            {
+                _logger.LogError("Email is not found.");
+                throw;
+            }
+        }
     }
 }

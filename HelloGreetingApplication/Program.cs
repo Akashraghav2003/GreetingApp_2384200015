@@ -39,6 +39,7 @@ try
     builder.Services.AddScoped<IGreetingRL, GreetingRL>();
     builder.Services.AddScoped<GreetingContext>();
     builder.Services.AddScoped<ITokenService, TokenService>();
+    builder.Services.AddScoped<IEmailService, EmailService>();
 
 
     builder.Services.AddScoped<IUserBL, UserBL>();

@@ -13,5 +13,6 @@ namespace RepositoryLayer.Interface
         bool RegisterUser(UserDTO userDTO);
 
         UserEntity LogIn(LoginDTO loginDTO);
+        UserEntity ForgetPassword(ForgetPasswordDTO forgetPasswordDTO);
     }
 }

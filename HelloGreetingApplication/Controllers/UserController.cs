@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using Middleware.GlobalException;
 using Microsoft.AspNetCore.Authorization;
+using RepositoryLayer.Interface;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -14,11 +15,13 @@ namespace HelloGreetingApplication.Controllers
         
         private readonly IUserBL _userBL;
         private readonly ILogger<UserController> _logger;
+        private readonly IEmailService _emailService;
 
-        public UserController(ILogger<UserController> logger, IUserBL userBL)
+        public UserController(ILogger<UserController> logger, IUserBL userBL, IEmailService emailService)
         {
             _logger = logger;
             _userBL = userBL;
+            _emailService = emailService;
         }
 
 
@@ -106,10 +109,43 @@ namespace HelloGreetingApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Method to Use Forget Password
+        /// </summary>
+        /// <returns>Token</returns>
         [HttpPost("ForgetPassword")]
-        public IActionResult ForgetPassword()
+        public IActionResult ForgetPassword(ForgetPasswordDTO forgetPasswordDTO)
         {
-            return Ok();
+            ResponseModel<string> responseModel = new ResponseModel<string>();
+            try
+            {
+                var result = _userBL.ForgetPassword(forgetPasswordDTO);
+
+                responseModel.Success = true;
+                responseModel.Message = "Check your Email.";
+                responseModel.Data = "";
+
+                _emailService.SendEmail(forgetPasswordDTO.Email, "Token for Forget Password", result);
+                return Ok(responseModel);
+            }
+            catch(KeyNotFoundException ex)
+            {
+                _logger.LogError("Give the correct Email.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return Unauthorized(errorResponse);
+            }
+            catch(ArgumentNullException ex)
+            {
+                _logger.LogError("Give the correct Email.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return Unauthorized(errorResponse);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("Some Error occurred.");
+                var errorResponse = ExceptionHandler.HandleException(ex, _logger);
+                return Unauthorized(errorResponse);
+            }
         }
 
         [HttpPost("ResetPassword")]

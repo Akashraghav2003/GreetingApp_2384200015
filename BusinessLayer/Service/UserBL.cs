@@ -76,5 +76,30 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
+
+        public string ForgetPassword(ForgetPasswordDTO forgetPasswordDTO)
+        {
+            try
+            {
+                if(forgetPasswordDTO == null)
+                {
+                    throw new ArgumentNullException("Give the correct Email.");
+                }
+
+                var result = _userRL.ForgetPassword(forgetPasswordDTO);
+
+                var token = _tokenService.GenerateToken(result);
+
+                return token;
+            }catch(KeyNotFoundException ex)
+            {
+                _logger.LogError("Email not found." + ex);
+                throw;
+            }catch(ArgumentNullException ex)
+            {
+                _logger.LogError("Give correct Email " + ex);
+                throw;
+            }
+        }
     }
 }
